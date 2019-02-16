@@ -1,0 +1,110 @@
+s4dbatch2@lab2-HCL-Desktop:~$ ls hari
+abc.txt
+s4dbatch2@lab2-HCL-Desktop:~$ cd hari
+s4dbatch2@lab2-HCL-Desktop:~/hari$ ls
+abc.txt
+s4dbatch2@lab2-HCL-Desktop:~/hari$  ls -lt
+total 4
+-rw-rw-r-- 1 s4dbatch2 s4dbatch2 16 Feb 14 10:02 abc.txt
+s4dbatch2@lab2-HCL-Desktop:~/hari$ ls-lt
+ls-lt: command not found
+s4dbatch2@lab2-HCL-Desktop:~/hari$ ls -l
+total 4
+-rw-rw-r-- 1 s4dbatch2 s4dbatch2 16 Feb 14 10:02 abc.txt
+s4dbatch2@lab2-HCL-Desktop:~/hari$ mkdir 123.xtt
+s4dbatch2@lab2-HCL-Desktop:~/hari$ mkdir 123.txt
+s4dbatch2@lab2-HCL-Desktop:~/hari$ ls -l
+total 12
+drwxrwxr-x 2 s4dbatch2 s4dbatch2 4096 Feb 14 11:11 123.txt
+drwxrwxr-x 2 s4dbatch2 s4dbatch2 4096 Feb 14 11:11 123.xtt
+-rw-rw-r-- 1 s4dbatch2 s4dbatch2   16 Feb 14 10:02 abc.txt
+s4dbatch2@lab2-HCL-Desktop:~/hari$ ls -ltr
+total 12
+-rw-rw-r-- 1 s4dbatch2 s4dbatch2   16 Feb 14 10:02 abc.txt
+drwxrwxr-x 2 s4dbatch2 s4dbatch2 4096 Feb 14 11:11 123.xtt
+drwxrwxr-x 2 s4dbatch2 s4dbatch2 4096 Feb 14 11:11 123.txt
+s4dbatch2@lab2-HCL-Desktop:~/hari$ ll
+total 20
+drwxrwxr-x  4 s4dbatch2 s4dbatch2 4096 Feb 14 11:11 ./
+drwxr-xr-x 28 s4dbatch2 s4dbatch2 4096 Feb 14 10:01 ../
+drwxrwxr-x  2 s4dbatch2 s4dbatch2 4096 Feb 14 11:11 123.txt/
+drwxrwxr-x  2 s4dbatch2 s4dbatch2 4096 Feb 14 11:11 123.xtt/
+-rw-rw-r--  1 s4dbatch2 s4dbatch2   16 Feb 14 10:02 abc.txt
+s4dbatch2@lab2-HCL-Desktop:~/hari$ cat 123.txt
+cat: 123.txt: Is a directory
+s4dbatch2@lab2-HCL-Desktop:~/hari$ cat> 123.txt
+bash: 123.txt: Is a directory
+s4dbatch2@lab2-HCL-Desktop:~/hari$ cat > 123.txt
+bash: 123.txt: Is a directory
+s4dbatch2@lab2-HCL-Desktop:~/hari$ cat> new.txt
+harikrishnan
+kattanam
+^Z
+[1]+  Stopped                 cat > new.txt
+s4dbatch2@lab2-HCL-Desktop:~/hari$ cat new.txt
+harikrishnan
+kattanam
+s4dbatch2@lab2-HCL-Desktop:~/hari$ cat> qw.txt
+1
+2
+^C
+s4dbatch2@lab2-HCL-Desktop:~/hari$ cat> paste qw.txt new.txt
+s4dbatch2@lab2-HCL-Desktop:~/hari$ paste qw.txt new.txt
+1	harikrishnan
+2	kattanam
+s4dbatch2@lab2-HCL-Desktop:~/hari$ cat> saar.txt
+murivetta simhathinte
+garjaanam 
+shwasam 
+garjanathekkal bheekaramayirunnu
+^Z
+[2]+  Stopped                 cat > saar.txt
+s4dbatch2@lab2-HCL-Desktop:~/hari$ cat saar.txt
+murivetta simhathinte
+garjaanam
+shwasam
+garjanathekkal bheekaramayirunnu
+s4dbatch2@lab2-HCL-Desktop:~/hari$ grep simham.txt
+^Z
+[3]+  Stopped                 grep --color=auto simham.txt
+s4dbatch2@lab2-HCL-Desktop:~/hari$ grep simham *.txt
+s4dbatch2@lab2-HCL-Desktop:~/hari$ grep simha *.txt
+saar.txt:murivetta simhathinte
+s4dbatch2@lab2-HCL-Desktop:~/hari$ 
+s4dbatch2@lab2-HCL-Desktop:~/hari$ cat> tu.txt
+1  radha
+2  raju
+3  luttappi
+4  kuttoosan
+5  dakini
+6  dinkini
+7  mayavi
+^Z
+[4]+  Stopped                 cat > tu.txt
+s4dbatch2@lab2-HCL-Desktop:~/hari$ cat tu.txt
+1  radha
+2  raju
+3  luttappi
+4  kuttoosan
+5  dakini
+6  dinkini
+7  mayavi
+s4dbatch2@lab2-HCL-Desktop:~/hari$ cat> sut.txt
+1  soothran
+2  sheru
+3  kadiyan
+4
+5  karinakkan
+6  ajgadakan
+^Z
+[5]+  Stopped                 cat > sut.txt
+s4dbatch2@lab2-HCL-Desktop:~/hari$ join tu.txt sut.txt
+1 radha soothran
+2 raju sheru
+3 luttappi kadiyan
+4 kuttoosan
+5 dakini karinakkan
+6 dinkini ajgadakan
+s4dbatch2@lab2-HCL-Desktop:~/hari$ 
+s4dbatch2@lab2-HCL-Desktop:~/hari$ 
+
