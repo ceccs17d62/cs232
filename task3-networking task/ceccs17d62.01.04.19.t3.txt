@@ -1,0 +1,91 @@
+Script started on Monday 01 April 2019 11:11:21 AM IST
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ if c[K[Kconfig 
+enp2s0    Link encap:Ethernet  HWaddr 38:d5:47:b8:da:97  
+          inet addr:192.168.0.127  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::575e:1217:dd08:cf2f/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:182204 errors:0 dropped:1 overruns:0 frame:0
+          TX packets:20785 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:37740388 (37.7 MB)  TX bytes:2728384 (2.7 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:18876 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:18876 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:1250840 (1.2 MB)  TX bytes:1250840 (1.2 MB)
+
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ ifconfig -a
+enp2s0    Link encap:Ethernet  HWaddr 38:d5:47:b8:da:97  
+          inet addr:192.168.0.127  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::575e:1217:dd08:cf2f/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:182269 errors:0 dropped:1 overruns:0 frame:0
+          TX packets:20785 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:37745386 (37.7 MB)  TX bytes:2728384 (2.7 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:18876 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:18876 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:1250840 (1.2 MB)  TX bytes:1250840 (1.2 MB)
+
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ ifconfig enp2s0
+enp2s0    Link encap:Ethernet  HWaddr 38:d5:47:b8:da:97  
+          inet addr:192.168.0.127  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::575e:1217:dd08:cf2f/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:182497 errors:0 dropped:1 overruns:0 frame:0
+          TX packets:20785 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:37763229 (37.7 MB)  TX bytes:2728384 (2.7 MB)
+
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ ifconfig enp2s0[K[K[K[K[K-a[1Pe[Kifconfig e-a[Ksudo apt install nodejs-legacypm[K\[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksudo apt install nodejs-legacy[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnode -v[Ksudo apt-get install nodejs-legacy[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15Pexport https_proxy=[1P_proxy=s_proxy=[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo apt-get install nodejs-legacy[K[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnode -v[Ksudo apt install nodejs-legacy[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo apt install nodejs-legacy[C[C[C[C[C[C[C[C[C[C[C[C[C[Cifconfig [K-a[1Pe[Kifconfig enps[K2s0 up
+SIOCSIFFLAGS: Operation not permitted
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo ifconfig enp2s0 up
+SIOCSIFFLAGS: Operation not permitted
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ ifconfig enp2s0 up[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksi[Kdo[K[Kus[Kdo ifconfig enp2s0
+[sudo] password for cec: 
+enp2s0    Link encap:Ethernet  HWaddr 38:d5:47:b8:da:97  
+          inet addr:192.168.0.127  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::575e:1217:dd08:cf2f/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:184227 errors:0 dropped:1 overruns:0 frame:0
+          TX packets:20918 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:38028564 (38.0 MB)  TX bytes:2755552 (2.7 MB)
+
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo ifconfig enp2s0 dow[K[K[Kup
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo ifconfig enp2s0 up[K[Kdown
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo ifconfig enp2s0 down[2Pup
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ ifconfig -a
+enp2s0    Link encap:Ethernet  HWaddr 38:d5:47:b8:da:97  
+          inet addr:192.168.0.127  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::575e:1217:dd08:cf2f/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:193583 errors:0 dropped:1 overruns:0 frame:0
+          TX packets:22958 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:43717802 (43.7 MB)  TX bytes:2985224 (2.9 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:20160 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:20160 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:1335560 (1.3 MB)  TX bytes:1335560 (1.3 MB)
+
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo ifconfig enp2s0 192.168.0.127 
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ exit
+exit
+
+Script done on Monday 01 April 2019 11:23:47 AM IST
