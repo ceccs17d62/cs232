@@ -47,15 +47,13 @@ enp2s0    Link encap:Ethernet  HWaddr 38:d5:47:b8:da:97
           collisions:0 txqueuelen:1000 
           RX bytes:37763229 (37.7 MB)  TX bytes:2728384 (2.7 MB)
 
-]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ ifconfig enp2s0[K[K[K[K[K-a[1Pe[Kifconfig e-a[Ksudo apt install nodejs-legacypm[K\[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksudo apt install nodejs-legacy[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnode -v[Ksudo apt-get install nodejs-legacy[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15Pexport https_proxy=[1P_proxy=s_proxy=[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo apt-get install nodejs-legacy[K[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnode -v[Ksudo apt install nodejs-legacy[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo apt install nodejs-legacy[C[C[C[C[C[C[C[C[C[C[C[C[C[Cifconfig [K-a[1Pe[Kifconfig enps[K2s0 up
-SIOCSIFFLAGS: Operation not permitted
-]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo ifconfig enp2s0 up
-SIOCSIFFLAGS: Operation not permitted
+
 ]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ ifconfig enp2s0 up[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksi[Kdo[K[Kus[Kdo ifconfig enp2s0
 [sudo] password for cec: 
 enp2s0    Link encap:Ethernet  HWaddr 38:d5:47:b8:da:97  
           inet addr:192.168.0.127  Bcast:192.168.0.255  Mask:255.255.255.0
           inet6 addr: fe80::575e:1217:dd08:cf2f/64 Scope:Link
+          
           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
           RX packets:184227 errors:0 dropped:1 overruns:0 frame:0
           TX packets:20918 errors:0 dropped:0 overruns:0 carrier:0
