@@ -1,0 +1,7 @@
+sudo apt-get install nginx
+service nginx status
+sudo ufw app list
+systemctl status nginx
+sudo gedit /etc/nginx/sites-enabled/default
+cd /var/www/html
+sudo gedit index.html

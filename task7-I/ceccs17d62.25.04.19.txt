@@ -1,0 +1,340 @@
+Script started on Thursday 25 April 2019 09:11:18 AM IST
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo apt-get install nginx
+[sudo] password for cec: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+nginx is already the newest version (1.10.3-0ubuntu0.16.04.3).
+0 upgraded, 0 newly installed, 0 to remove and 310 not upgraded.
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ servivice nginx status[1P[1P[1P[1@c
+[?1h=[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server[m
+   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: en[m
+   Active: [0;1;32mactive (running)[0m since Thu 2019-04-25 09:04:09 IST; 9min ago[m
+ Main PID: 1007 (nginx)[m
+   CGroup: /system.slice/nginx.service[m
+           ├─1007 nginx: master process /usr/sbin/nginx -g daemon on; master_pro[m
+           ├─1008 nginx: worker process                           [m
+           ├─1009 nginx: worker process                           [m
+           ├─1010 nginx: worker process                           [m
+           └─1011 nginx: worker process                           [m
+[m
+Apr 25 09:04:08 CC2-29 systemd[1]: Starting A high performance web server and a [m
+Apr 25 09:04:09 CC2-29 systemd[1]: Started A high performance web server and a r[m
+[7mlines 1-13/13 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7mlines 1-13/13 (END)[27m[K[K [KESCESC[KOO[KCC[H[2J[H[H[2J[H[0;1;32m[0m server and a reverse proxy server[m
+ginx.service; enabled; vendor preset: enabled)[m
+[0;1;32m[0m19-04-25 09:04:09 IST; 9min ago[m
+[m
+[m
+/usr/sbin/nginx -g daemon on; master_process on[m
+                          [m
+                          [m
+                          [m
+                          [m
+[m
+ing A high performance web server and a reverse proxy server...[m
+ed A high performance web server and a reverse proxy server.[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-13/13 (END)[27m[K[K [KESCESC[KOO[KCC[H[2J[H[H[2J[H[0;1;32m[0m[m
+abled)[m
+[0;1;32m[0m[m
+[m
+[m
+cess on[m
+[m
+[m
+[m
+[m
+[m
+reverse proxy server...[m
+everse proxy server.[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-13/13 (END)[27m[K[K [KESCESC[KOO[KCC[H[2J[H[H[2J[H[0;1;32m[0m[m
+[m
+[0;1;32m[0m[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-13/13 (END)[27m[K[K [KESCESC[KOO[KCC[H[2J[H[H[2J[H[0;1;32m[0m[m
+[m
+[0;1;32m[0m[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-13/13 (END)[27m[K[K [KESCESC[KOO[KCC[H[2J[H[H[2J[H[0;1;32m[0m[m
+[m
+[0;1;32m[0m[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-13/13 (END)[27m[K[K [KESCESC[KOO[KAA[K[K[7mlines 1-13/13 (END)[27m[K[K [KESCESC[KOO[KAA[K[K[7mlines 1-13/13 (END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[H[0;1;32m[0m[m
+[m
+[0;1;32m[0m[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-13/13 (END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[H[0;1;32m[0m[m
+[m
+[0;1;32m[0m[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-13/13 (END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[H[0;1;32m[0m[m
+abled)[m
+[0;1;32m[0m[m
+[m
+[m
+cess on[m
+[m
+[m
+[m
+[m
+[m
+reverse proxy server...[m
+everse proxy server.[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-13/13 (END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[H[0;1;32m[0m server and a reverse proxy server[m
+ginx.service; enabled; vendor preset: enabled)[m
+[0;1;32m[0m19-04-25 09:04:09 IST; 9min ago[m
+[m
+[m
+/usr/sbin/nginx -g daemon on; master_process on[m
+                          [m
+                          [m
+                          [m
+                          [m
+[m
+ing A high performance web server and a reverse proxy server...[m
+ed A high performance web server and a reverse proxy server.[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-13/13 (END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[H[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server[m
+   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: en[m
+   Active: [0;1;32mactive (running)[0m since Thu 2019-04-25 09:04:09 IST; 9min ago[m
+ Main PID: 1007 (nginx)[m
+   CGroup: /system.slice/nginx.service[m
+           ├─1007 nginx: master process /usr/sbin/nginx -g daemon on; master_pro[m
+           ├─1008 nginx: worker process                           [m
+           ├─1009 nginx: worker process                           [m
+           ├─1010 nginx: worker process                           [m
+           └─1011 nginx: worker process                           [m
+[m
+Apr 25 09:04:08 CC2-29 systemd[1]: Starting A high performance web server and a [m
+Apr 25 09:04:09 CC2-29 systemd[1]: Started A high performance web server and a r[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-13/13 (END)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[H[2J[H[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server[m
+   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: en[m
+   Active: [0;1;32mactive (running)[0m since Thu 2019-04-25 09:04:09 IST; 9min ago[m
+ Main PID: 1007 (nginx)[m
+   CGroup: /system.slice/nginx.service[m
+           ├─1007 nginx: master process /usr/sbin/nginx -g daemon on; master_pro[m
+           ├─1008 nginx: worker process                           [m
+           ├─1009 nginx: worker process                           [m
+           ├─1010 nginx: worker process                           [m
+           └─1011 nginx: worker process                           [m
+[m
+Apr 25 09:04:08 CC2-29 systemd[1]: Starting A high performance web server and a [m
+Apr 25 09:04:09 CC2-29 systemd[1]: Started A high performance web server and a r[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-13/13 (END)[27m[K[K [KESCESC[KOO[KAA[K[K[7mlines 1-13/13 (END)[27m[K[K[?1l>]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo ufw app list
+Available applications:
+  Apache
+  Apache Full
+  Apache Secure
+  CUPS
+  Nginx Full
+  Nginx HTTP
+  Nginx HTTPS
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ systemctl status nginx
+[?1h=[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server[m
+   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: en[m
+   Active: [0;1;32mactive (running)[0m since Thu 2019-04-25 09:04:09 IST; 12min ago[m
+ Main PID: 1007 (nginx)[m
+   CGroup: /system.slice/nginx.service[m
+           ├─1007 nginx: master process /usr/sbin/nginx -g daemon on; master_pro[m
+           ├─1008 nginx: worker process                           [m
+           ├─1009 nginx: worker process                           [m
+           ├─1010 nginx: worker process                           [m
+           └─1011 nginx: worker process                           [m
+[m
+Apr 25 09:04:08 CC2-29 systemd[1]: Starting A high performance web server and a [m
+Apr 25 09:04:09 CC2-29 systemd[1]: Started A high performance web server and a r[m
+[7mlines 1-13/13 (END)[27m[K[K[?1l>]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo gedit `[K/etc/nginx//[Ksites-enabled/default 
+^C
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ cd /var/www/html/[K
+]0;cec@CC2-29: /var/www/html[01;32mcec@CC2-29[00m:[01;34m/var/www/html[00m$ sudo gedit inden[Kx.hrt[K[Ktml
+
+(gedit:1513): Gtk-WARNING **: Calling Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+
+** (gedit:1513): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-spell-enabled not supported
+
+** (gedit:1513): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:1513): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-spell-enabled not supported
+
+** (gedit:1513): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:1513): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-spell-enabled not supported
+
+** (gedit:1513): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:1513): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-spell-enabled not supported
+
+** (gedit:1513): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+^C
+]0;cec@CC2-29: /var/www/html[01;32mcec@CC2-29[00m:[01;34m/var/www/html[00m$ sudo gedit index.html[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd /var/www/html[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksudo gedit /etc/nginx/sites-enabled/default [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Pystemctl status nginxudo gedit /etc/nginx/sites-enabled/default [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Pystemctl status nginxudo gedit /etc/nginx/sites-enabled/default [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kindex.html 
+
+(gedit:1611): Gtk-WARNING **: Calling Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+^C
+]0;cec@CC2-29: /var/www/html[01;32mcec@CC2-29[00m:[01;34m/var/www/html[00m$ sudo gedit index.html 
+
+(gedit:1636): Gtk-WARNING **: Calling Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+
+** (gedit:1636): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-spell-enabled not supported
+
+** (gedit:1636): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:1636): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-spell-enabled not supported
+
+** (gedit:1636): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:1636): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-spell-enabled not supported
+
+** (gedit:1636): WARNING **: Set document metadata failed: Setting 
