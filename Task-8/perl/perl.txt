@@ -1,0 +1,4 @@
+sudo apt install perl
+perl -v //current version
+perl hello.pl
+

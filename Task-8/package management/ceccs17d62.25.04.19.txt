@@ -1,0 +1,1357 @@
+Script started on Thursday 25 April 2019 10:28:10 AM IST
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ apt update
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+W: chmod 0700 of directory /var/lib/apt/lists/partial failed - SetupAPTPartialDirectory (1: Operation not permitted)
+E: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)
+E: Unable to lock directory /var/lib/apt/lists/
+W: Problem unlinking the file /var/cache/apt/pkgcache.bin - RemoveCaches (13: Permission denied)
+W: Problem unlinking the file /var/cache/apt/srcpkgcache.bin - RemoveCaches (13: Permission denied)
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ apt upgrade
+E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo apt update
+[sudo] password for cec: 
+[33m0% [Working][0m            Ign:1 http://dl.google.com/linux/chrome/deb stable InRelease
+[33m0% [Waiting for headers] [Waiting for headers] [Waiting for headers][0m                                                                    Hit:2 http://archive.canonical.com/ubuntu xenial InRelease
+[33m0% [Waiting for headers] [Waiting for headers] [Waiting for headers][0m[33m0% [2 InRelease gpgv 11.5 kB] [Waiting for headers] [Waiting for headers] [Wait[0m                                                                               Get:3 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
+[33m0% [2 InRelease gpgv 11.5 kB] [Waiting for headers] [3 InRelease 8,073 B/109 kB[0m[33m                                                                               0% [2 InRelease gpgv 11.5 kB] [Waiting for headers] [Waiting for headers][0m                                                                         Hit:4 http://in.archive.ubuntu.com/ubuntu xenial InRelease
+[33m0% [2 InRelease gpgv 11.5 kB] [Waiting for headers] [Waiting for headers][0m[33m                                                                         0% [Waiting for headers] [Waiting for headers][0m[33m0% [3 InRelease gpgv 109 kB] [Waiting for headers] [Waiting for headers][0m                                                                        Hit:5 http://dl.google.com/linux/chrome/deb stable Release
+[33m                                                                        0% [3 InRelease gpgv 109 kB] [Waiting for headers][0m[33m                                                  0% [Waiting for headers][0m[33m0% [4 InRelease gpgv 247 kB] [Waiting for headers][0m                                                  Get:6 http://in.archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
+[33m0% [4 InRelease gpgv 247 kB] [6 InRelease 9,540 B/109 kB 9%][0m[33m                                                            0% [4 InRelease gpgv 247 kB][0m[33m                            0% [Waiting for headers][0m[33m0% [Release.gpg gpgv 943 B] [Waiting for headers][0m[33m                                                 0% [Waiting for headers][0m[33m0% [6 InRelease gpgv 109 kB] [Waiting for headers][0m[33m                                                  0% [Waiting for headers][0m                        Get:8 http://in.archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]
+[33m0% [8 InRelease 8,089 B/107 kB 8%][0m[33m                                  0% [Working][0m[33m0% [8 InRelease gpgv 107 kB][0m[33m                            100% [Working][0m              Fetched 325 kB in 1s (213 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 4%Reading package lists... 4%Reading package lists... 8%Reading package lists... 8%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 33%Reading package lists... 33%Reading package lists... 50%Reading package lists... 56%Reading package lists... 56%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 71%Reading package lists... 71%Reading package lists... 74%Reading package lists... 74%Reading package lists... 77%Reading package lists... 77%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 83%Reading package lists... 83%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 90%Reading package lists... 90%Reading package lists... 92%Reading package lists... 92%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 1%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+310 packages can be upgraded. Run 'apt list --upgradable' to see them.
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ apt list --upgradable 
+Listing... 0%Listing... 0%Listing... 1%Listing... Done
+[32mactivity-log-manager[0m/xenial-updates 0.9.7-0ubuntu23.16.04.1 amd64 [upgradable from: 0.9.7-0ubuntu23]
+[32madobe-flash-properties-gtk[0m/xenial 1:20190409.1-0ubuntu0.16.04.1 amd64 [upgradable from: 1:20181205.1-0ubuntu0.16.04.1]
+[32madobe-flashplugin[0m/xenial 1:20190409.1-0ubuntu0.16.04.1 amd64 [upgradable from: 1:20181205.1-0ubuntu0.16.04.1]
+[32mappmenu-qt5[0m/xenial-updates 0.3.0+16.04.20170216-0ubuntu1 amd64 [upgradable from: 0.3.0+16.04.20151130-0ubuntu2]
+[32mappstream[0m/xenial-updates 0.9.4-1ubuntu4 amd64 [upgradable from: 0.9.4-1ubuntu2]
+[32mapt[0m/xenial-updates 1.2.31 amd64 [upgradable from: 1.2.29ubuntu0.1]
+[32mapt-transport-https[0m/xenial-updates 1.2.31 amd64 [upgradable from: 1.2.29ubuntu0.1]
+[32mapt-utils[0m/xenial-updates 1.2.31 amd64 [upgradable from: 1.2.29ubuntu0.1]
+[32mapturl[0m/xenial-updates 0.5.2ubuntu11.2 amd64 [upgradable from: 0.5.2ubuntu11.1]
+[32mapturl-common[0m/xenial-updates 0.5.2ubuntu11.2 amd64 [upgradable from: 0.5.2ubuntu11.1]
+[32mbamfdaemon[0m/xenial-updates 0.5.3~bzr0+16.04.20180209-0ubuntu1 amd64 [upgradable from: 0.5.3~bzr0+16.04.20160824-0ubuntu1]
+[32mbase-files[0m/xenial-updates 9.4ubuntu4.8 amd64 [upgradable from: 9.4ubuntu4.4]
+[32mbsdutils[0m/xenial-updates 1:2.27.1-6ubuntu3.6 amd64 [upgradable from: 1:2.27.1-6ubuntu3.2]
+[32mca-certificates[0m/xenial-updates,xenial-updates 20170717~16.04.2 all [upgradable from: 20170717~16.04.1]
+[32mcompiz[0m/xenial-updates,xenial-updates 1:0.9.12.3+16.04.20180221-0ubuntu1 all [upgradable from: 1:0.9.12.2+16.04.20160823-0ubuntu1]
+[32mcompiz-core[0m/xenial-updates 1:0.9.12.3+16.04.20180221-0ubuntu1 amd64 [upgradable from: 1:0.9.12.2+16.04.20160823-0ubuntu1]
+[32mcompiz-gnome[0m/xenial-updates 1:0.9.12.3+16.04.20180221-0ubuntu1 amd64 [upgradable from: 1:0.9.12.2+16.04.20160823-0ubuntu1]
+[32mcompiz-plugins-default[0m/xenial-updates 1:0.9.12.3+16.04.20180221-0ubuntu1 amd64 [upgradable from: 1:0.9.12.2+16.04.20160823-0ubuntu1]
+[32mconsole-setup[0m/xenial-updates,xenial-updates 1.108ubuntu15.5 all [upgradable from: 1.108ubuntu15.3]
+[32mconsole-setup-linux[0m/xenial-updates,xenial-updates 1.108ubuntu15.5 all [upgradable from: 1.108ubuntu15.3]
+[32mcoreutils[0m/xenial-updates 8.25-2ubuntu3~16.04 amd64 [upgradable from: 8.25-2ubuntu2]
+[32mcpp-5[0m/xenial-updates 5.4.0-6ubuntu1~16.04.11 amd64 [upgradable from: 5.4.0-6ubuntu1~16.04.10]
+[32mcracklib-runtime[0m/xenial-updates 2.9.2-1ubuntu1 amd64 [upgradable from: 2.9.2-1build2]
+[32mcups[0m/xenial-updates 2.1.3-4ubuntu0.7 amd64 [upgradable from: 2.1.3-4ubuntu0.6]
+[32mcups-bsd[0m/xenial-updates 2.1.3-4ubuntu0.7 amd64 [upgradable from: 2.1.3-4ubuntu0.6]
+[32mcups-client[0m/xenial-updates 2.1.3-4ubuntu0.7 amd64 [upgradable from: 2.1.3-4ubuntu0.6]
+[32mcups-common[0m/xenial-updates,xenial-updates 2.1.3-4ubuntu0.7 all [upgradable from: 2.1.3-4ubuntu0.6]
+[32mcups-core-drivers[0m/xenial-updates 2.1.3-4ubuntu0.7 amd64 [upgradable from: 2.1.3-4ubuntu0.6]
+[32mcups-daemon[0m/xenial-updates 2.1.3-4ubuntu0.7 amd64 [upgradable from: 2.1.3-4ubuntu0.6]
+[32mcups-ppdc[0m/xenial-updates 2.1.3-4ubuntu0.7 amd64 [upgradable from: 2.1.3-4ubuntu0.6]
+[32mcups-server-common[0m/xenial-updates,xenial-updates 2.1.3-4ubuntu0.7 all [upgradable from: 2.1.3-4ubuntu0.6]
+[32mdesktop-file-utils[0m/xenial-updates 0.22-1ubuntu5.2 amd64 [upgradable from: 0.22-1ubuntu5]
+[32mdpkg[0m/xenial-updates 1.18.4ubuntu1.5 amd64 [upgradable from: 1.18.4ubuntu1.1]
+[32mdpkg-dev[0m/xenial-updates,xenial-updates 1.18.4ubuntu1.5 all [upgradable from: 1.18.4ubuntu1.1]
+[32mfriendly-recovery[0m/xenial-updates,xenial-updates 0.2.31ubuntu2 all [upgradable from: 0.2.31]
+[32mfwupd[0m/xenial-updates 0.8.3-0ubuntu4 amd64 [upgradable from: 0.7.0-0ubuntu4.3]
+[32mfwupdate[0m/xenial-updates 0.5-2ubuntu7 amd64 [upgradable from: 0.5-2ubuntu4]
+[32mfwupdate-signed[0m/xenial-updates 1.11.3+0.5-2ubuntu7 amd64 [upgradable from: 1.11+0.5-2ubuntu4]
+[32mg++-5[0m/xenial-updates 5.4.0-6ubuntu1~16.04.11 amd64 [upgradable from: 5.4.0-6ubuntu1~16.04.10]
+[32mgcc-5[0m/xenial-updates 5.4.0-6ubuntu1~16.04.11 amd64 [upgradable from: 5.4.0-6ubuntu1~16.04.10]
+[32mgcc-5-base[0m/xenial-updates 5.4.0-6ubuntu1~16.04.11 amd64 [upgradable from: 5.4.0-6ubuntu1~16.04.10]
+[32mgeoclue-ubuntu-geoip[0m/xenial-updates 1.0.2+14.04.20131125-0ubuntu2.16.04.1 amd64 [upgradable from: 1.0.2+14.04.20131125-0ubuntu2]
+[32mgir1.2-appindicator3-0.1[0m/xenial-updates 12.10.1+16.04.20170215-0ubuntu1 amd64 [upgradable from: 12.10.1+15.04.20141110-0ubuntu1]
+[32mgir1.2-gtk-3.0[0m/xenial-updates 3.18.9-1ubuntu3.3 amd64 [upgradable from: 3.18.9-1ubuntu3.1]
+[32mgir1.2-ibus-1.0[0m/xenial-updates 1.5.11-1ubuntu2.1 amd64 [upgradable from: 1.5.11-1ubuntu2]
+[32mgir1.2-packagekitglib-1.0[0m/xenial-updates 0.8.17-4ubuntu6~gcc5.4ubuntu1.4 amd64 [upgradable from: 0.8.17-4ubuntu6~gcc5.4ubuntu1.1]
+[32mgir1.2-unity-5.0[0m/xenial-updates 7.1.4+16.04.20180209.1-0ubuntu1 amd64 [upgradable from: 7.1.4+16.04.20160701-0ubuntu1]
+[32mgnome-accessibility-themes[0m/xenial-updates,xenial-updates 3.18.0-2ubuntu2 all [upgradable from: 3.18.0-2ubuntu1]
+[32mgnome-disk-utility[0m/xenial-updates 3.18.3.1-1ubuntu1.1 amd64 [upgradable from: 3.18.3.1-1ubuntu1]
+[32mgnome-software[0m/xenial-updates 3.20.5-0ubuntu0.16.04.11 amd64 [upgradable from: 3.20.1+git20161013.0.d77d6cf-0ubuntu2~xenial1]
+[32mgnome-software-common[0m/xenial-updates,xenial-updates 3.20.5-0ubuntu0.16.04.11 all [upgradable from: 3.20.1+git20161013.0.d77d6cf-0ubuntu2~xenial1]
+[32mgoogle-chrome-stable[0m/stable 74.0.3729.108-1 amd64 [upgradable from: 71.0.3578.98-1]
+[32mgrub-common[0m/xenial-updates 2.02~beta2-36ubuntu3.21 amd64 [upgradable from: 2.02~beta2-36ubuntu3.7]
+[32mgrub-efi-amd64[0m/xenial-updates 2.02~beta2-36ubuntu3.21 amd64 [upgradable from: 2.02~beta2-36ubuntu3.7]
+[32mgrub-efi-amd64-bin[0m/xenial-updates 2.02~beta2-36ubuntu3.21 amd64 [upgradable from: 2.02~beta2-36ubuntu3.7]
+[32mgrub-efi-amd64-signed[0m/xenial-updates 1.66.21+2.02~beta2-36ubuntu3.21 amd64 [upgradable from: 1.66.7+2.02~beta2-36ubuntu3.7]
+[32mgrub2-common[0m/xenial-updates 2.02~beta2-36ubuntu3.21 amd64 [upgradable from: 2.02~beta2-36ubuntu3.7]
+[32mguile-2.0-libs[0m/xenial-updates 2.0.11+1-10ubuntu0.1 amd64 [upgradable from: 2.0.11+1-10]
+[32mgvfs[0m/xenial-updates 1.28.2-1ubuntu1~16.04.2 amd64 [upgradable from: 1.28.2-1ubuntu1~16.04.1]
+[32mgvfs-backends[0m/xenial-updates 1.28.2-1ubuntu1~16.04.2 amd64 [upgradable from: 1.28.2-1ubuntu1~16.04.1]
+[32mgvfs-bin[0m/xenial-updates 1.28.2-1ubuntu1~16.04.2 amd64 [upgradable from: 1.28.2-1ubuntu1~16.04.1]
+[32mgvfs-common[0m/xenial-updates,xenial-updates 1.28.2-1ubuntu1~16.04.2 all [upgradable from: 1.28.2-1ubuntu1~16.04.1]
+[32mgvfs-daemons[0m/xenial-updates 1.28.2-1ubuntu1~16.04.2 amd64 [upgradable from: 1.28.2-1ubuntu1~16.04.1]
+[32mgvfs-fuse[0m/xenial-updates 1.28.2-1ubuntu1~16.04.2 amd64 [upgradable from: 1.28.2-1ubuntu1~16.04.1]
+[32mgvfs-libs[0m/xenial-updates 1.28.2-1ubuntu1~16.04.2 amd64 [upgradable from: 1.28.2-1ubuntu1~16.04.1]
+[32mhdparm[0m/xenial-updates 9.48+ds-1ubuntu0.1 amd64 [upgradable from: 9.48+ds-1]
+[32mhicolor-icon-theme[0m/xenial-updates,xenial-updates 0.15-0ubuntu1.1 all [upgradable from: 0.15-0ubuntu1]
+[32mhwdata[0m/xenial-updates,xenial-updates 0.267-1ubuntu2 all [upgradable from: 0.267-1]
+[32mibus[0m/xenial-updates 1.5.11-1ubuntu2.1 amd64 [upgradable from: 1.5.11-1ubuntu2]
+[32mibus-gtk[0m/xenial-updates 1.5.11-1ubuntu2.1 amd64 [upgradable from: 1.5.11-1ubuntu2]
+[32mibus-gtk3[0m/xenial-updates 1.5.11-1ubuntu2.1 amd64 [upgradable from: 1.5.11-1ubuntu2]
+[32mifupdown[0m/xenial-updates 0.8.10ubuntu1.4 amd64 [upgradable from: 0.8.10ubuntu1.2]
+[32minit[0m/xenial-updates 1.29ubuntu4 amd64 [upgradable from: 1.29ubuntu3]
+[32minit-system-helpers[0m/xenial-updates,xenial-updates 1.29ubuntu4 all [upgradable from: 1.29ubuntu3]
+[32miproute2[0m/xenial-updates 4.3.0-1ubuntu3.16.04.4 amd64 [upgradable from: 4.3.0-1ubuntu3]
+[32misc-dhcp-client[0m/xenial-updates 4.3.3-5ubuntu12.10 amd64 [upgradable from: 4.3.3-5ubuntu12.9]
+[32misc-dhcp-common[0m/xenial-updates 4.3.3-5ubuntu12.10 amd64 [upgradable from: 4.3.3-5ubuntu12.9]
+[32mkeyboard-configuration[0m/xenial-updates,xenial-updates 1.108ubuntu15.5 all [upgradable from: 1.108ubuntu15.3]
+[32mklibc-utils[0m/xenial-updates 2.0.4-8ubuntu1.16.04.4 amd64 [upgradable from: 2.0.4-8ubuntu1.16.04.3]
+[32mkmod[0m/xenial-updates 22-1ubuntu5.2 amd64 [upgradable from: 22-1ubuntu5]
+[32mless[0m/xenial-updates 481-2.1ubuntu0.2 amd64 [upgradable from: 481-2.1ubuntu0.1]
+[32mlibappindicator3-1[0m/xenial-updates 12.10.1+16.04.20170215-0ubuntu1 amd64 [upgradable from: 12.10.1+15.04.20141110-0ubuntu1]
+[32mlibappstream-glib8[0m/xenial-updates 0.5.13-1ubuntu6 amd64 [upgradable from: 0.5.13-1ubuntu4]
+[32mlibappstream3[0m/xenial-updates 0.9.4-1ubuntu4 amd64 [upgradable from: 0.9.4-1ubuntu2]
+[32mlibapt-inst2.0[0m/xenial-updates 1.2.31 amd64 [upgradable from: 1.2.29ubuntu0.1]
+[32mlibapt-pkg5.0[0m/xenial-updates 1.2.31 amd64 [upgradable from: 1.2.29ubuntu0.1]
+[32mlibasan2[0m/xenial-updates 5.4.0-6ubuntu1~16.04.11 amd64 [upgradable from: 5.4.0-6ubuntu1~16.04.10]
+[32mlibatomic1[0m/xenial-updates 5.4.0-6ubuntu1~16.04.11 amd64 [upgradable from: 5.4.0-6ubuntu1~16.04.10]
+[32mlibaudit-common[0m/xenial-updates,xenial-updates 1:2.4.5-1ubuntu2.1 all [upgradable from: 1:2.4.5-1ubuntu2]
+[32mlibaudit1[0m/xenial-updates 1:2.4.5-1ubuntu2.1 amd64 [upgradable from: 1:2.4.5-1ubuntu2]
+[32mlibbamf3-2[0m/xenial-updates 0.5.3~bzr0+16.04.20180209-0ubuntu1 amd64 [upgradable from: 0.5.3~bzr0+16.04.20160824-0ubuntu1]
+[32mlibblkid1[0m/xenial-updates 2.27.1-6ubuntu3.6 amd64 [upgradable from: 2.27.1-6ubuntu3.2]
+[32mlibc-bin[0m/xenial-updates 2.23-0ubuntu11 amd64 [upgradable from: 2.23-0ubuntu10]
+[32mlibc-dev-bin[0m/xenial-updates 2.23-0ubuntu11 amd64 [upgradable from: 2.23-0ubuntu10]
+[32mlibc6[0m/xenial-updates 2.23-0ubuntu11 amd64 [upgradable from: 2.23-0ubuntu10]
+[32mlibc6-dbg[0m/xenial-updates 2.23-0ubuntu11 amd64 [upgradable from: 2.23-0ubuntu10]
+[32mlibc6-dev[0m/xenial-updates 2.23-0ubuntu11 amd64 [upgradable from: 2.23-0ubuntu10]
+[32mlibcc1-0[0m/xenial-updates 5.4.0-6ubuntu1~16.04.11 amd64 [upgradable from: 5.4.0-6ubuntu1~16.04.10]
+[32mlibcilkrts5[0m/xenial-updates 5.4.0-6ubuntu1~16.04.11 amd64 [upgradable from: 5.4.0-6ubuntu1~16.04.10]
+[32mlibcompizconfig0[0m/xenial-updates 1:0.9.12.3+16.04.20180221-0ubuntu1 amd64 [upgradable from: 1:0.9.12.2+16.04.20160823-0ubuntu1]
+[32mlibcrack2[0m/xenial-updates 2.9.2-1ubuntu1 amd64 [upgradable from: 2.9.2-1build2]
+[32mlibcryptsetup4[0m/xenial-updates 2:1.6.6-5ubuntu2.1 amd64 [upgradable from: 2:1.6.6-5ubuntu2]
+[32mlibcups2[0m/xenial-updates 2.1.3-4ubuntu0.7 amd64 [upgradable from: 2.1.3-4ubuntu0.6]
+[32mlibcupscgi1[0m/xenial-updates 2.1.3-4ubuntu0.7 amd64 [upgradable from: 2.1.3-4ubuntu0.6]
+[32mlibcupsimage2[0m/xenial-updates 2.1.3-4ubuntu0.7 amd64 [upgradable from: 2.1.3-4ubuntu0.6]
+[32mlibcupsmime1[0m/xenial-updates 2.1.3-4ubuntu0.7 amd64 [upgradable from: 2.1.3-4ubuntu0.6]
+[32mlibcupsppdc1[0m/xenial-updates 2.1.3-4ubuntu0.7 amd64 [upgradable from: 2.1.3-4ubuntu0.6]
+[32mlibdecoration0[0m/xenial-updates 1:0.9.12.3+16.04.20180221-0ubuntu1 amd64 [upgradable from: 1:0.9.12.2+16.04.20160823-0ubuntu1]
+[32mlibdfu1[0m/xenial-updates 0.8.3-0ubuntu4 amd64 [upgradable from: 0.7.0-0ubuntu4.3]
+[32mlibdpkg-perl[0m/xenial-updates,xenial-updates 1.18.4ubuntu1.5 all [upgradable from: 1.18.4ubuntu1.1]
+[32mlibdrm-intel1[0m/xenial-updates 2.4.91-2~16.04.1 amd64 [upgradable from: 2.4.70-1~ubuntu16.04.1]
+[32mlibdrm-nouveau2[0m/xenial-updates 2.4.91-2~16.04.1 amd64 [upgradable from: 2.4.70-1~ubuntu16.04.1]
+[32mlibdrm-radeon1[0m/xenial-updates 2.4.91-2~16.04.1 amd64 [upgradable from: 2.4.70-1~ubuntu16.04.1]
+[32mlibegl1-mesa[0m/xenial-updates 18.0.5-0ubuntu0~16.04.1 amd64 [upgradable from: 12.0.6-0ubuntu0.16.04.1]
+[32mlibepoxy0[0m/xenial-updates 1.3.1-1ubuntu0.16.04.2 amd64 [upgradable from: 1.3.1-1]
+[32mlibfdisk1[0m/xenial-updates 2.27.1-6ubuntu3.6 amd64 [upgradable from: 2.27.1-6ubuntu3.2]
+[32mlibfwup0[0m/xenial-updates 0.5-2ubuntu7 amd64 [upgradable from: 0.5-2ubuntu4]
+[32mlibfwupd1[0m/xenial-updates 0.8.3-0ubuntu4 amd64 [upgradable from: 0.7.0-0ubuntu4.3]
+[32mlibgail-3-0[0m/xenial-updates 3.18.9-1ubuntu3.3 amd64 [upgradable from: 3.18.9-1ubuntu3.1]
+[32mlibgail-common[0m/xenial-updates 2.24.30-1ubuntu1.16.04.2 amd64 [upgradable from: 2.24.30-1ubuntu1]
+[32mlibgail18[0m/xenial-updates 2.24.30-1ubuntu1.16.04.2 amd64 [upgradable from: 2.24.30-1ubuntu1]
+[32mlibgbm1[0m/xenial-updates 18.0.5-0ubuntu0~16.04.1 amd64 [upgradable from: 12.0.6-0ubuntu0.16.04.1]
+[32mlibgcc-5-dev[0m/xenial-updates 5.4.0-6ubuntu1~16.04.11 amd64 [upgradable from: 5.4.0-6ubuntu1~16.04.10]
+[32mlibgl1-mesa-dri[0m/xenial-updates 18.0.5-0ubuntu0~16.04.1 amd64 [upgradable from: 12.0.6-0ubuntu0.16.04.1]
+[32mlibgnutls-openssl27[0m/xenial-updates 3.4.10-4ubuntu1.4 amd64 [upgradable from: 3.4.10-4ubuntu1.3]
+[32mlibgnutls30[0m/xenial-updates 3.4.10-4ubuntu1.4 amd64 [upgradable from: 3.4.10-4ubuntu1.3]
+[32mlibgomp1[0m/xenial-updates 5.4.0-6ubuntu1~16.04.11 amd64 [upgradable from: 5.4.0-6ubuntu1~16.04.10]
+[32mlibgtk-3-0[0m/xenial-updates 3.18.9-1ubuntu3.3 amd64 [upgradable from: 3.18.9-1ubuntu3.1]
+[32mlibgtk-3-bin[0m/xenial-updates 3.18.9-1ubuntu3.3 amd64 [upgradable from: 3.18.9-1ubuntu3.1]
+[32mlibgtk-3-common[0m/xenial-updates,xenial-updates 3.18.9-1ubuntu3.3 all [upgradable from: 3.18.9-1ubuntu3.1]
+[32mlibgtk2.0-0[0m/xenial-updates 2.24.30-1ubuntu1.16.04.2 amd64 [upgradable from: 2.24.30-1ubuntu1]
+[32mlibgtk2.0-bin[0m/xenial-updates 2.24.30-1ubuntu1.16.04.2 amd64 [upgradable from: 2.24.30-1ubuntu1]
+[32mlibgtk2.0-common[0m/xenial-updates,xenial-updates 2.24.30-1ubuntu1.16.04.2 all [upgradable from: 2.24.30-1ubuntu1]
+[32mlibgweather-3-6[0m/xenial-updates 3.18.2-0ubuntu0.2 amd64 [upgradable from: 3.18.2-0ubuntu0.1]
+[32mlibgweather-common[0m/xenial-updates,xenial-updates 3.18.2-0ubuntu0.2 all [upgradable from: 3.18.2-0ubuntu0.1]
+[32mlibibus-1.0-5[0m/xenial-updates 1.5.11-1ubuntu2.1 amd64 [upgradable from: 1.5.11-1ubuntu2]
+[32mlibinput10[0m/xenial-updates 1.6.3-1ubuntu1~16.04.1 amd64 [upgradable from: 1.2.3-1ubuntu1]
+[32mlibitm1[0m/xenial-updates 5.4.0-6ubuntu1~16.04.11 amd64 [upgradable from: 5.4.0-6ubuntu1~16.04.10]
+[32mlibklibc[0m/xenial-updates 2.0.4-8ubuntu1.16.04.4 amd64 [upgradable from: 2.0.4-8ubuntu1.16.04.3]
+[32mlibkmod2[0m/xenial-updates 22-1ubuntu5.2 amd64 [upgradable from: 22-1ubuntu5]
+[32mlibldap-2.4-2[0m/xenial-updates 2.4.42+dfsg-2ubuntu3.4 amd64 [upgradable from: 2.4.42+dfsg-2ubuntu3.2]
+[32mliblsan0[0m/xenial-updates 5.4.0-6ubuntu1~16.04.11 amd64 [upgradable from: 5.4.0-6ubuntu1~16.04.10]
+[32mlibmbim-glib4[0m/xenial-updates 1.14.0-1ubuntu0.16.04.1 amd64 [upgradable from: 1.12.2-2ubuntu1]
+[32mlibmbim-proxy[0m/xenial-updates 1.14.0-1ubuntu0.16.04.1 amd64 [upgradable from: 1.12.2-2ubuntu1]
+[32mlibmetacity-private3a[0m/xenial-updates 1:3.18.7-0ubuntu0.3 amd64 [upgradable from: 1:3.18.7-0ubuntu0.2]
+[32mlibmm-glib0[0m/xenial-updates 1.6.4-1ubuntu0.16.04.1 amd64 [upgradable from: 1.4.12-1ubuntu1]
+[32mlibmount1[0m/xenial-updates 2.27.1-6ubuntu3.6 amd64 [upgradable from: 2.27.1-6ubuntu3.2]
+[32mlibmpx0[0m/xenial-updates 5.4.0-6ubuntu1~16.04.11 amd64 [upgradable from: 5.4.0-6ubuntu1~16.04.10]
+[32mlibnautilus-extension1a[0m/xenial-updates 1:3.18.4.is.3.14.3-0ubuntu6 amd64 [upgradable from: 1:3.18.4.is.3.14.3-0ubuntu5]
+[32mlibnm-gtk-common[0m/xenial-updates,xenial-updates 1.2.6-0ubuntu0.16.04.4 all [upgradable from: 1.2.6-0ubuntu0.16.04.2]
+[32mlibnm-gtk0[0m/xenial-updates 1.2.6-0ubuntu0.16.04.4 amd64 [upgradable from: 1.2.6-0ubuntu0.16.04.2]
+[32mlibnma-common[0m/xenial-updates,xenial-updates 1.2.6-0ubuntu0.16.04.4 all [upgradable from: 1.2.6-0ubuntu0.16.04.2]
+[32mlibnma0[0m/xenial-updates 1.2.6-0ubuntu0.16.04.4 amd64 [upgradable from: 1.2.6-0ubuntu0.16.04.2]
+[32mlibnux-4.0-0[0m/xenial-updates 4.0.8+16.04.20180622.2-0ubuntu1 amd64 [upgradable from: 4.0.8+16.04.20160705-0ubuntu1]
+[32mlibnux-4.0-common[0m/xenial-updates,xenial-updates 4.0.8+16.04.20180622.2-0ubuntu1 all [upgradable from: 4.0.8+16.04.20160705-0ubuntu1]
+[32mlibpackagekit-glib2-16[0m/xenial-updates 0.8.17-4ubuntu6~gcc5.4ubuntu1.4 amd64 [upgradable from: 0.8.17-4ubuntu6~gcc5.4ubuntu1.1]
+[32mlibpam-modules[0m/xenial-updates 1.1.8-3.2ubuntu2.1 amd64 [upgradable from: 1.1.8-3.2ubuntu2]
+[32mlibpam-modules-bin[0m/xenial-updates 1.1.8-3.2ubuntu2.1 amd64 [upgradable from: 1.1.8-3.2ubuntu2]
+[32mlibpam-runtime[0m/xenial-updates,xenial-updates 1.1.8-3.2ubuntu2.1 all [upgradable from: 1.1.8-3.2ubuntu2]
+[32mlibpam0g[0m/xenial-updates 1.1.8-3.2ubuntu2.1 amd64 [upgradable from: 1.1.8-3.2ubuntu2]
+[32mlibparted2[0m/xenial-updates 3.2-15ubuntu0.1 amd64 [upgradable from: 3.2-15]
+[32mlibpci3[0m/xenial-updates 1:3.3.1-1.1ubuntu1.3 amd64 [upgradable from: 1:3.3.1-1.1ubuntu1]
+[32mlibplymouth4[0m/xenial-updates 0.9.2-3ubuntu13.5 amd64 [upgradable from: 0.9.2-3ubuntu13.1]
+[32mlibpulse-mainloop-glib0[0m/xenial-updates 1:8.0-0ubuntu3.10 amd64 [upgradable from: 1:8.0-0ubuntu3.2]
+[32mlibpulse0[0m/xenial-updates 1:8.0-0ubuntu3.10 amd64 [upgradable from: 1:8.0-0ubuntu3.2]
+[32mlibpulsedsp[0m/xenial-updates 1:8.0-0ubuntu3.10 amd64 [upgradable from: 1:8.0-0ubuntu3.2]
+[32mlibqmi-proxy[0m/xenial-updates 1.16.2-1ubuntu0.16.04.1 amd64 [upgradable from: 1.12.6-1]
+[32mlibqt5core5a[0m/xenial-updates 5.5.1+dfsg-16ubuntu7.5 amd64 [upgradable from: 5.5.1+dfsg-16ubuntu7.2]
+[32mlibqt5dbus5[0m/xenial-updates 5.5.1+dfsg-16ubuntu7.5 amd64 [upgradable from: 5.5.1+dfsg-16ubuntu7.2]
+[32mlibqt5gui5[0m/xenial-updates 5.5.1+dfsg-16ubuntu7.5 amd64 [upgradable from: 5.5.1+dfsg-16ubuntu7.2]
+[32mlibqt5network5[0m/xenial-updates 5.5.1+dfsg-16ubuntu7.5 amd64 [upgradable from: 5.5.1+dfsg-16ubuntu7.2]
+[32mlibqt5opengl5[0m/xenial-updates 5.5.1+dfsg-16ubuntu7.5 amd64 [upgradable from: 5.5.1+dfsg-16ubuntu7.2]
+[32mlibqt5printsupport5[0m/xenial-updates 5.5.1+dfsg-16ubuntu7.5 amd64 [upgradable from: 5.5.1+dfsg-16ubuntu7.2]
+[32mlibqt5sql5[0m/xenial-updates 5.5.1+dfsg-16ubuntu7.5 amd64 [upgradable from: 5.5.1+dfsg-16ubuntu7.2]
+[32mlibqt5sql5-sqlite[0m/xenial-updates 5.5.1+dfsg-16ubuntu7.5 amd64 [upgradable from: 5.5.1+dfsg-16ubuntu7.2]
+[32mlibqt5test5[0m/xenial-updates 5.5.1+dfsg-16ubuntu7.5 amd64 [upgradable from: 5.5.1+dfsg-16ubuntu7.2]
+[32mlibqt5widgets5[0m/xenial-updates 5.5.1+dfsg-16ubuntu7.5 amd64 [upgradable from: 5.5.1+dfsg-16ubuntu7.2]
+[32mlibqt5xml5[0m/xenial-updates 5.5.1+dfsg-16ubuntu7.5 amd64 [upgradable from: 5.5.1+dfsg-16ubuntu7.2]
+[32mlibquadmath0[0m/xenial-updates 5.4.0-6ubuntu1~16.04.11 amd64 [upgradable from: 5.4.0-6ubuntu1~16.04.10]
+[32mlibsane[0m/xenial-updates 1.0.25+git20150528-1ubuntu2.16.04.1 amd64 [upgradable from: 1.0.25+git20150528-1ubuntu2]
+[32mlibsane-common[0m/xenial-updates,xenial-updates 1.0.25+git20150528-1ubuntu2.16.04.1 all [upgradable from: 1.0.25+git20150528-1ubuntu2]
+[32mlibsasl2-2[0m/xenial-updates 2.1.26.dfsg1-14ubuntu0.1 amd64 [upgradable from: 2.1.26.dfsg1-14build1]
+[32mlibsasl2-modules[0m/xenial-updates 2.1.26.dfsg1-14ubuntu0.1 amd64 [upgradable from: 2.1.26.dfsg1-14build1]
+[32mlibsasl2-modules-db[0m/xenial-updates 2.1.26.dfsg1-14ubuntu0.1 amd64 [upgradable from: 2.1.26.dfsg1-14build1]
+[32mlibseccomp2[0m/xenial-updates 2.3.1-2.1ubuntu2~16.04.1 amd64 [upgradable from: 2.2.3-3ubuntu3]
+[32mlibservlet3.1-java[0m/xenial-updates,xenial-updates 8.0.32-1ubuntu1.9 all [upgradable from: 8.0.32-1ubuntu1.8]
+[32mlibslang2[0m/xenial-updates 2.3.0-2ubuntu1.1 amd64 [upgradable from: 2.3.0-2ubuntu1]
+[32mlibsmartcols1[0m/xenial-updates 2.27.1-6ubuntu3.6 amd64 [upgradable from: 2.27.1-6ubuntu3.2]
+[32mlibsnapd-glib1[0m/xenial-updates 1.47-0ubuntu0.16.04.0 amd64 [upgradable from: 1.2-0ubuntu1.1~xenial]
+[32mlibstdc++-5-dev[0m/xenial-updates 5.4.0-6ubuntu1~16.04.11 amd64 [upgradable from: 5.4.0-6ubuntu1~16.04.10]
+[32mlibstdc++6[0m/xenial-updates 5.4.0-6ubuntu1~16.04.11 amd64 [upgradable from: 5.4.0-6ubuntu1~16.04.10]
+[32mlibtsan0[0m/xenial-updates 5.4.0-6ubuntu1~16.04.11 amd64 [upgradable from: 5.4.0-6ubuntu1~16.04.10]
+[32mlibubsan0[0m/xenial-updates 5.4.0-6ubuntu1~16.04.11 amd64 [upgradable from: 5.4.0-6ubuntu1~16.04.10]
+[32mlibunity-control-center1[0m/xenial-updates 15.04.0+16.04.20171130-0ubuntu1 amd64 [upgradable from: 15.04.0+16.04.20160705-0ubuntu1]
+[32mlibunity-core-6.0-9[0m/xenial-updates 7.4.5+16.04.20180221-0ubuntu1 amd64 [upgradable from: 7.4.0+16.04.20160906-0ubuntu1]
+[32mlibunity-protocol-private0[0m/xenial-updates 7.1.4+16.04.20180209.1-0ubuntu1 amd64 [upgradable from: 7.1.4+16.04.20160701-0ubuntu1]
+[32mlibunity-scopes-json-def-desktop[0m/xenial-updates,xenial-updates 7.1.4+16.04.20180209.1-0ubuntu1 all [upgradable from: 7.1.4+16.04.20160701-0ubuntu1]
+[32mlibunity-settings-daemon1[0m/xenial-updates 15.04.1+16.04.20160701-0ubuntu3 amd64 [upgradable from: 15.04.1+16.04.20160701-0ubuntu1]
+[32mlibunity9[0m/xenial-updates 7.1.4+16.04.20180209.1-0ubuntu1 amd64 [upgradable from: 7.1.4+16.04.20160701-0ubuntu1]
+[32mlibuuid1[0m/xenial-updates 2.27.1-6ubuntu3.6 amd64 [upgradable from: 2.27.1-6ubuntu3.2]
+[32mlibwacom-bin[0m/xenial-updates 0.22-1~ubuntu16.04.1 amd64 [upgradable from: 0.18-1]
+[32mlibwacom-common[0m/xenial-updates,xenial-updates 0.22-1~ubuntu16.04.1 all [upgradable from: 0.18-1]
+[32mlibwacom2[0m/xenial-updates 0.22-1~ubuntu16.04.1 amd64 [upgradable from: 0.18-1]
+[32mlibwayland-egl1-mesa[0m/xenial-updates 18.0.5-0ubuntu0~16.04.1 amd64 [upgradable from: 12.0.6-0ubuntu0.16.04.1]
+[32mlibwhoopsie0[0m/xenial-updates 0.2.52.5 amd64 [upgradable from: 0.2.52.2]
+[32mlibxatracker2[0m/xenial-updates 18.0.5-0ubuntu0~16.04.1 amd64 [upgradable from: 12.0.6-0ubuntu0.16.04.1]
+[32mlight-themes[0m/xenial-updates,xenial-updates 14.04+16.04.20180326-0ubuntu1 all [upgradable from: 14.04+16.04.20161024-0ubuntu1]
+[32mlinux-generic-hwe-16.04[0m/xenial-updates 4.15.0.48.69 amd64 [upgradable from: 4.13.0.39.58]
+[32mlinux-headers-generic-hwe-16.04[0m/xenial-updates 4.15.0.48.69 amd64 [upgradable from: 4.13.0.39.58]
+[32mlinux-image-generic-hwe-16.04[0m/xenial-updates 4.15.0.48.69 amd64 [upgradable from: 4.13.0.39.58]
+[32mlinux-libc-dev[0m/xenial-updates 4.4.0-146.172 amd64 [upgradable from: 4.4.0-145.171]
+[32mlinux-signed-generic-hwe-16.04[0m/xenial-updates 4.15.0.48.69 amd64 [upgradable from: 4.15.0.47.68]
+[32mlinux-signed-image-generic-hwe-16.04[0m/xenial-updates 4.15.0.48.69 amd64 [upgradable from: 4.15.0.47.68]
+[32mlocales[0m/xenial-updates,xenial-updates 2.23-0ubuntu11 all [upgradable from: 2.23-0ubuntu10]
+[32mlogrotate[0m/xenial-updates 3.8.7-2ubuntu2.16.04.2 amd64 [upgradable from: 3.8.7-2ubuntu2]
+[32mlshw[0m/xenial-updates 02.17-1.1ubuntu3.5 amd64 [upgradable from: 02.17-1.1ubuntu3.2]
+[32mmakedev[0m/xenial-updates,xenial-updates 2.3.1-93ubuntu2~ubuntu16.04.1 all [upgradable from: 2.3.1-93ubuntu1]
+[32mmetacity-common[0m/xenial-updates,xenial-updates 1:3.18.7-0ubuntu0.3 all [upgradable from: 1:3.18.7-0ubuntu0.2]
+[32mmodemmanager[0m/xenial-updates 1.6.4-1ubuntu0.16.04.1 amd64 [upgradable from: 1.4.12-1ubuntu1]
+[32mmokutil[0m/xenial-updates 0.3.0+1538710437.fb6250f-0ubuntu2~16.04.1 amd64 [upgradable from: 0.3.0-0ubuntu3]
+[32mmount[0m/xenial-updates 2.27.1-6ubuntu3.6 amd64 [upgradable from: 2.27.1-6ubuntu3.2]
+[32mmultiarch-support[0m/xenial-updates 2.23-0ubuntu11 amd64 [upgradable from: 2.23-0ubuntu10]
+[32mnano[0m/xenial-updates 2.5.3-2ubuntu2 amd64 [upgradable from: 2.5.3-2ubuntu1]
+[32mnautilus[0m/xenial-updates 1:3.18.4.is.3.14.3-0ubuntu6 amd64 [upgradable from: 1:3.18.4.is.3.14.3-0ubuntu5]
+[32mnautilus-data[0m/xenial-updates,xenial-updates 1:3.18.4.is.3.14.3-0ubuntu6 all [upgradable from: 1:3.18.4.is.3.14.3-0ubuntu5]
+[32mnetwork-manager-gnome[0m/xenial-updates 1.2.6-0ubuntu0.16.04.4 amd64 [upgradable from: 1.2.6-0ubuntu0.16.04.2]
+[32mnux-tools[0m/xenial-updates 4.0.8+16.04.20180622.2-0ubuntu1 amd64 [upgradable from: 4.0.8+16.04.20160705-0ubuntu1]
+[32mparted[0m/xenial-updates 3.2-15ubuntu0.1 amd64 [upgradable from: 3.2-15]
+[32mpciutils[0m/xenial-updates 1:3.3.1-1.1ubuntu1.3 amd64 [upgradable from: 1:3.3.1-1.1ubuntu1]
+[32mplymouth[0m/xenial-updates 0.9.2-3ubuntu13.5 amd64 [upgradable from: 0.9.2-3ubuntu13.1]
+[32mplymouth-label[0m/xenial-updates 0.9.2-3ubuntu13.5 amd64 [upgradable from: 0.9.2-3ubuntu13.1]
+[32mplymouth-theme-ubuntu-logo[0m/xenial-updates 0.9.2-3ubuntu13.5 amd64 [upgradable from: 0.9.2-3ubuntu13.1]
+[32mplymouth-theme-ubuntu-text[0m/xenial-updates 0.9.2-3ubuntu13.5 amd64 [upgradable from: 0.9.2-3ubuntu13.1]
+[32mpulseaudio[0m/xenial-updates 1:8.0-0ubuntu3.10 amd64 [upgradable from: 1:8.0-0ubuntu3.2]
+[32mpulseaudio-module-bluetooth[0m/xenial-updates 1:8.0-0ubuntu3.10 amd64 [upgradable from: 1:8.0-0ubuntu3.2]
+[32mpulseaudio-module-x11[0m/xenial-updates 1:8.0-0ubuntu3.10 amd64 [upgradable from: 1:8.0-0ubuntu3.2]
+[32mpulseaudio-utils[0m/xenial-updates 1:8.0-0ubuntu3.10 amd64 [upgradable from: 1:8.0-0ubuntu3.2]
+[32mpython-apt-common[0m/xenial-updates,xenial-updates 1.1.0~beta1ubuntu0.16.04.2 all [upgradable from: 1.1.0~beta1build1]
+[32mpython3-apt[0m/xenial-updates 1.1.0~beta1ubuntu0.16.04.2 amd64 [upgradable from: 1.1.0~beta1build1]
+[32mpython3-distupgrade[0m/xenial-updates,xenial-updates 1:16.04.26 all [upgradable from: 1:16.04.25]
+[32mpython3-software-properties[0m/xenial-updates,xenial-updates 0.96.20.8 all [upgradable from: 0.96.20.5]
+[32mpython3-update-manager[0m/xenial-updates,xenial-updates 1:16.04.15 all [upgradable from: 1:16.04.12]
+[32mpython3-urllib3[0m/xenial-updates,xenial-updates 1.13.1-2ubuntu0.16.04.2 all [upgradable from: 1.13.1-2ubuntu0.16.04.1]
+[32mresolvconf[0m/xenial-updates,xenial-updates 1.78ubuntu6 all [upgradable from: 1.78ubuntu2]
+[32mrfkill[0m/xenial-updates 0.5-1ubuntu3.1 amd64 [upgradable from: 0.5-1ubuntu3]
+[32mrsyslog[0m/xenial-updates 8.16.0-1ubuntu3.1 amd64 [upgradable from: 8.16.0-1ubuntu3]
+[32msane-utils[0m/xenial-updates 1.0.25+git20150528-1ubuntu2.16.04.1 amd64 [upgradable from: 1.0.25+git20150528-1ubuntu2]
+[32msecureboot-db[0m/xenial-updates 1.4~ubuntu0.16.04.1 amd64 [upgradable from: 1.1]
+[32msession-shortcuts[0m/xenial-updates,xenial-updates 1.2ubuntu0.16.04.1 all [upgradable from: 1.2]
+[32mshared-mime-info[0m/xenial-updates 1.5-2ubuntu0.2 amd64 [upgradable from: 1.5-2ubuntu0.1]
+[32mshim[0m/xenial-updates 15+1533136590.3beb971-0ubuntu1 amd64 [upgradable from: 0.8-0ubuntu2]
+[32mshim-signed[0m/xenial-updates 1.33.1~16.04.5+15+1533136590.3beb971-0ubuntu1 amd64 [upgradable from: 1.19~16.04.1+0.8-0ubuntu2]
+[32msnap-confine[0m/xenial-updates 2.38 amd64 [upgradable from: 2.37.4ubuntu0.1]
+[32msnapd[0m/xenial-updates 2.38 amd64 [upgradable from: 2.37.4ubuntu0.1]
+[32msnapd-login-service[0m/xenial-updates 1.33-0ubuntu0.16.04.1 amd64 [upgradable from: 1.2-0ubuntu1.1~xenial]
+[32msni-qt[0m/xenial-updates 0.2.7+16.04.20170217.1-0ubuntu1 amd64 [upgradable from: 0.2.7+15.10.20150729-0ubuntu1]
+[32msoftware-properties-common[0m/xenial-updates,xenial-updates 0.96.20.8 all [upgradable from: 0.96.20.5]
+[32msoftware-properties-gtk[0m/xenial-updates,xenial-updates 0.96.20.8 all [upgradable from: 0.96.20.5]
+[32msquashfs-tools[0m/xenial-updates 1:4.3-3ubuntu2.16.04.3 amd64 [upgradable from: 1:4.3-3ubuntu2]
+[32msudo[0m/xenial-updates 1.8.16-0ubuntu1.5 amd64 [upgradable from: 1.8.16-0ubuntu1.4]
+[32msuru-icon-theme[0m/xenial-updates,xenial-updates 14.04+16.04.20180326-0ubuntu1 all [upgradable from: 14.04+16.04.20161024-0ubuntu1]
+[32mthermald[0m/xenial-updates 1.5-2ubuntu4 amd64 [upgradable from: 1.5-2ubuntu2]
+[32mubuntu-artwork[0m/xenial-updates,xenial-updates 1:14.04+16.04.20180326-0ubuntu1 all [upgradable from: 1:14.04+16.04.20161024-0ubuntu1]
+[32mubuntu-core-launcher[0m/xenial-updates 2.38 amd64 [upgradable from: 2.37.4ubuntu0.1]
+[32mubuntu-desktop[0m/xenial-updates 1.361.3 amd64 [upgradable from: 1.361]
+[32mubuntu-minimal[0m/xenial-updates 1.361.3 amd64 [upgradable from: 1.361]
+[32mubuntu-mobile-icons[0m/xenial-updates,xenial-updates 14.04+16.04.20180326-0ubuntu1 all [upgradable from: 14.04+16.04.20161024-0ubuntu1]
+[32mubuntu-mono[0m/xenial-updates,xenial-updates 14.04+16.04.20180326-0ubuntu1 all [upgradable from: 14.04+16.04.20161024-0ubuntu1]
+[32mubuntu-release-upgrader-core[0m/xenial-updates,xenial-updates 1:16.04.26 all [upgradable from: 1:16.04.25]
+[32mubuntu-release-upgrader-gtk[0m/xenial-updates,xenial-updates 1:16.04.26 all [upgradable from: 1:16.04.25]
+[32mubuntu-software[0m/xenial-updates 3.20.5-0ubuntu0.16.04.11 amd64 [upgradable from: 3.20.1+git20161013.0.d77d6cf-0ubuntu2~xenial1]
+[32mubuntu-standard[0m/xenial-updates 1.361.3 amd64 [upgradable from: 1.361]
+[32munity[0m/xenial-updates 7.4.5+16.04.20180221-0ubuntu1 amd64 [upgradable from: 7.4.0+16.04.20160906-0ubuntu1]
+[32munity-control-center[0m/xenial-updates 15.04.0+16.04.20171130-0ubuntu1 amd64 [upgradable from: 15.04.0+16.04.20160705-0ubuntu1]
+[32munity-control-center-faces[0m/xenial-updates,xenial-updates 15.04.0+16.04.20171130-0ubuntu1 all [upgradable from: 15.04.0+16.04.20160705-0ubuntu1]
+[32munity-schemas[0m/xenial-updates,xenial-updates 7.4.5+16.04.20180221-0ubuntu1 all [upgradable from: 7.4.0+16.04.20160906-0ubuntu1]
+[32munity-scopes-runner[0m/xenial-updates,xenial-updates 7.1.4+16.04.20180209.1-0ubuntu1 all [upgradable from: 7.1.4+16.04.20160701-0ubuntu1]
+[32munity-services[0m/xenial-updates 7.4.5+16.04.20180221-0ubuntu1 amd64 [upgradable from: 7.4.0+16.04.20160906-0ubuntu1]
+[32munity-settings-daemon[0m/xenial-updates 15.04.1+16.04.20160701-0ubuntu3 amd64 [upgradable from: 15.04.1+16.04.20160701-0ubuntu1]
+[32mupdate-manager[0m/xenial-updates,xenial-updates 1:16.04.15 all [upgradable from: 1:16.04.12]
+[32mupdate-manager-core[0m/xenial-updates,xenial-updates 1:16.04.15 all [upgradable from: 1:16.04.12]
+[32mupdate-notifier[0m/xenial-updates 3.168.10 amd64 [upgradable from: 3.168.7]
+[32mupdate-notifier-common[0m/xenial-updates,xenial-updates 3.168.10 all [upgradable from: 3.168.7]
+[32mutil-linux[0m/xenial-updates 2.27.1-6ubuntu3.6 amd64 [upgradable from: 2.27.1-6ubuntu3.2]
+[32muuid-runtime[0m/xenial-updates 2.27.1-6ubuntu3.6 amd64 [upgradable from: 2.27.1-6ubuntu3.2]
+[32mvino[0m/xenial-updates 3.8.1-0ubuntu9.2 amd64 [upgradable from: 3.8.1-0ubuntu9.1]
+[32mwhoopsie[0m/xenial-updates 0.2.52.5 amd64 [upgradable from: 0.2.52.2]
+[32mwireless-regdb[0m/xenial-updates,xenial-updates 2018.05.09-0ubuntu1~16.04.1 all [upgradable from: 2015.07.20-1ubuntu1]
+[32mx11-common[0m/xenial-updates,xenial-updates 1:7.7+13ubuntu3.1 all [upgradable from: 1:7.7+13ubuntu3]
+[32mxdg-user-dirs[0m/xenial-updates 0.15-2ubuntu6.16.04.1 amd64 [upgradable from: 0.15-2ubuntu6]
+[32mxfonts-utils[0m/xenial-updates 1:7.7+3ubuntu0.16.04.2 amd64 [upgradable from: 1:7.7+3]
+[32mxorg[0m/xenial-updates 1:7.7+13ubuntu3.1 amd64 [upgradable from: 1:7.7+13ubuntu3]
+[32mxserver-common[0m/xenial-updates,xenial-updates 2:1.18.4-0ubuntu0.8 all [upgradable from: 2:1.18.4-0ubuntu0.7]
+[32mxserver-xorg-core-hwe-16.04[0m/xenial-updates,xenial-security 2:1.19.6-1ubuntu4.1~16.04.2 amd64 [upgradable from: 2:1.18.4-1ubuntu6.1~16.04.1]
+[32mxserver-xorg-hwe-16.04[0m/xenial-updates 1:7.7+16ubuntu3~16.04.1 amd64 [upgradable from: 1:7.7+13ubuntu4~16.04.2]
+[32mxserver-xorg-input-all-hwe-16.04[0m/xenial-updates 1:7.7+16ubuntu3~16.04.1 amd64 [upgradable from: 1:7.7+13ubuntu4~16.04.2]
+[32mxserver-xorg-input-evdev-hwe-16.04[0m/xenial-updates 1:2.10.5-1ubuntu1~16.04.1 amd64 [upgradable from: 1:2.10.2-1ubuntu1~16.04.1]
+[32mxserver-xorg-input-synaptics-hwe-16.04[0m/xenial-updates 1.9.0-1ubuntu1~16.04.1 amd64 [upgradable from: 1.8.3-1ubuntu1~16.04.1]
+[32mxserver-xorg-input-wacom-hwe-16.04[0m/xenial-updates 1:0.34.0-0ubuntu2~16.04.1 amd64 [upgradable from: 1:0.33.0-0ubuntu1~16.04.1]
+[32mxserver-xorg-video-all-hwe-16.04[0m/xenial-updates 1:7.7+16ubuntu3~16.04.1 amd64 [upgradable from: 1:7.7+13ubuntu4~16.04.2]
+[32mxserver-xorg-video-amdgpu-hwe-16.04[0m/xenial-updates 18.0.1-1~16.04.1 amd64 [upgradable from: 1.1.2-1~16.04.1]
+[32mxserver-xorg-video-ati-hwe-16.04[0m/xenial-updates 1:18.0.1-1~16.04.1 amd64 [upgradable from: 1:7.7.1-1~16.04.1]
+[32mxserver-xorg-video-fbdev-hwe-16.04[0m/xenial-updates 1:0.4.4-1build6~16.04.1 amd64 [upgradable from: 1:0.4.4-1build5~16.04.1]
+[32mxserver-xorg-video-intel-hwe-16.04[0m/xenial-updates 2:2.99.917+git20171229-1~16.04.1 amd64 [upgradable from: 2:2.99.917+git20160706-1ubuntu1~16.04.1]
+[32mxserver-xorg-video-nouveau-hwe-16.04[0m/xenial-updates 1:1.0.15-2~16.04.1 amd64 [upgradable from: 1:1.0.12-2~16.04.1]
+[32mxserver-xorg-video-qxl-hwe-16.04[0m/xenial-updates 0.1.5-2build1~16.04.1 amd64 [upgradable from: 0.1.4-3ubuntu3~16.04.1]
+[32mxserver-xorg-video-radeon-hwe-16.04[0m/xenial-updates 1:18.0.1-1~16.04.1 amd64 [upgradable from: 1:7.7.1-1~16.04.1]
+[32mxserver-xorg-video-vesa-hwe-16.04[0m/xenial-updates 1:2.3.4-1build3~16.04.1 amd64 [upgradable from: 1:2.3.4-1build2~16.04.1]
+[32mxserver-xorg-video-vmware-hwe-16.04[0m/xenial-updates 1:13.2.1-1build1~16.04.1 amd64 [upgradable from: 1:13.1.0-2ubuntu3~16.04.1]
+[32mzlib1g[0m/xenial-updates 1:1.2.8.dfsg-2ubuntu4.1 amd64 [upgradable from: 1:1.2.8.dfsg-2ubuntu4]
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ apt upgrade[1@s[1@u[1@d[1@o[1@ 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+Calculating upgrade... 0%Calculating upgrade... 10%Calculating upgrade... Done
+The following package was automatically installed and is no longer required:
+  snapd-login-service
+Use 'sudo apt autoremove' to remove it.
+The following NEW packages will be installed:
+  amd64-microcode intel-microcode iucode-tool libinput-bin libqmi-glib5
+  libxfont2 linux-headers-4.15.0-48 linux-headers-4.15.0-48-generic
+  linux-image-4.15.0-48-generic linux-modules-4.15.0-48-generic
+  linux-modules-extra-4.15.0-48-generic ubuntu-advantage-tools
+  xserver-xorg-legacy-hwe-16.04
+The following packages will be upgraded:
+  activity-log-manager adobe-flash-properties-gtk adobe-flashplugin
+  appmenu-qt5 appstream apt apt-transport-https apt-utils apturl apturl-common
+  bamfdaemon base-files bsdutils ca-certificates compiz compiz-core
+  compiz-gnome compiz-plugins-default console-setup console-setup-linux
+  coreutils cpp-5 cracklib-runtime cups cups-bsd cups-client cups-common
+  cups-core-drivers cups-daemon cups-ppdc cups-server-common
+  desktop-file-utils dpkg dpkg-dev friendly-recovery fwupd fwupdate
+  fwupdate-signed g++-5 gcc-5 gcc-5-base geoclue-ubuntu-geoip
+  gir1.2-appindicator3-0.1 gir1.2-gtk-3.0 gir1.2-ibus-1.0
+  gir1.2-packagekitglib-1.0 gir1.2-unity-5.0 gnome-accessibility-themes
+  gnome-disk-utility gnome-software gnome-software-common google-chrome-stable
+  grub-common grub-efi-amd64 grub-efi-amd64-bin grub-efi-amd64-signed
+  grub2-common guile-2.0-libs gvfs gvfs-backends gvfs-bin gvfs-common
+  gvfs-daemons gvfs-fuse gvfs-libs hdparm hicolor-icon-theme hwdata ibus
+  ibus-gtk ibus-gtk3 ifupdown init init-system-helpers iproute2
+  isc-dhcp-client isc-dhcp-common keyboard-configuration klibc-utils kmod less
+  libappindicator3-1 libappstream-glib8 libappstream3 libapt-inst2.0
+  libapt-pkg5.0 libasan2 libatomic1 libaudit-common libaudit1 libbamf3-2
+  libblkid1 libc-bin libc-dev-bin libc6 libc6-dbg libc6-dev libcc1-0
+  libcilkrts5 libcompizconfig0 libcrack2 libcryptsetup4 libcups2 libcupscgi1
+  libcupsimage2 libcupsmime1 libcupsppdc1 libdecoration0 libdfu1 libdpkg-perl
+  libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libegl1-mesa libepoxy0
+  libfdisk1 libfwup0 libfwupd1 libgail-3-0 libgail-common libgail18 libgbm1
+  libgcc-5-dev libgl1-mesa-dri libgnutls-openssl27 libgnutls30 libgomp1
+  libgtk-3-0 libgtk-3-bin libgtk-3-common libgtk2.0-0 libgtk2.0-bin
+  libgtk2.0-common libgweather-3-6 libgweather-common libibus-1.0-5 libinput10
+  libitm1 libklibc libkmod2 libldap-2.4-2 liblsan0 libmbim-glib4 libmbim-proxy
+  libmetacity-private3a libmm-glib0 libmount1 libmpx0 libnautilus-extension1a
+  libnm-gtk-common libnm-gtk0 libnma-common libnma0 libnux-4.0-0
+  libnux-4.0-common libpackagekit-glib2-16 libpam-modules libpam-modules-bin
+  libpam-runtime libpam0g libparted2 libpci3 libplymouth4
+  libpulse-mainloop-glib0 libpulse0 libpulsedsp libqmi-proxy libqt5core5a
+  libqt5dbus5 libqt5gui5 libqt5network5 libqt5opengl5 libqt5printsupport5
+  libqt5sql5 libqt5sql5-sqlite libqt5test5 libqt5widgets5 libqt5xml5
+  libquadmath0 libsane libsane-common libsasl2-2 libsasl2-modules
+  libsasl2-modules-db libseccomp2 libservlet3.1-java libslang2 libsmartcols1
+  libsnapd-glib1 libstdc++-5-dev libstdc++6 libtsan0 libubsan0
+  libunity-control-center1 libunity-core-6.0-9 libunity-protocol-private0
+  libunity-scopes-json-def-desktop libunity-settings-daemon1 libunity9
+  libuuid1 libwacom-bin libwacom-common libwacom2 libwayland-egl1-mesa
+  libwhoopsie0 libxatracker2 light-themes linux-generic-hwe-16.04
+  linux-headers-generic-hwe-16.04 linux-image-generic-hwe-16.04 linux-libc-dev
+  linux-signed-generic-hwe-16.04 linux-signed-image-generic-hwe-16.04 locales
+  logrotate lshw makedev metacity-common modemmanager mokutil mount
+  multiarch-support nano nautilus nautilus-data network-manager-gnome
+  nux-tools parted pciutils plymouth plymouth-label plymouth-theme-ubuntu-logo
+  plymouth-theme-ubuntu-text pulseaudio pulseaudio-module-bluetooth
+  pulseaudio-module-x11 pulseaudio-utils python-apt-common python3-apt
+  python3-distupgrade python3-software-properties python3-update-manager
+  python3-urllib3 resolvconf rfkill rsyslog sane-utils secureboot-db
+  session-shortcuts shared-mime-info shim shim-signed snap-confine snapd
+  snapd-login-service sni-qt software-properties-common
+  software-properties-gtk squashfs-tools sudo suru-icon-theme thermald
+  ubuntu-artwork ubuntu-core-launcher ubuntu-desktop ubuntu-minimal
+  ubuntu-mobile-icons ubuntu-mono ubuntu-release-upgrader-core
+  ubuntu-release-upgrader-gtk ubuntu-software ubuntu-standard unity
+  unity-control-center unity-control-center-faces unity-schemas
+  unity-scopes-runner unity-services unity-settings-daemon update-manager
+  update-manager-core update-notifier update-notifier-common util-linux
+  uuid-runtime vino whoopsie wireless-regdb x11-common xdg-user-dirs
+  xfonts-utils xorg xserver-common xserver-xorg-core-hwe-16.04
+  xserver-xorg-hwe-16.04 xserver-xorg-input-all-hwe-16.04
+  xserver-xorg-input-evdev-hwe-16.04 xserver-xorg-input-synaptics-hwe-16.04
+  xserver-xorg-input-wacom-hwe-16.04 xserver-xorg-video-all-hwe-16.04
+  xserver-xorg-video-amdgpu-hwe-16.04 xserver-xorg-video-ati-hwe-16.04
+  xserver-xorg-video-fbdev-hwe-16.04 xserver-xorg-video-intel-hwe-16.04
+  xserver-xorg-video-nouveau-hwe-16.04 xserver-xorg-video-qxl-hwe-16.04
+  xserver-xorg-video-radeon-hwe-16.04 xserver-xorg-video-vesa-hwe-16.04
+  xserver-xorg-video-vmware-hwe-16.04 zlib1g
+310 upgraded, 13 newly installed, 0 to remove and 0 not upgraded.
+Need to get 270 MB of archives.
+After this operation, 345 MB of additional disk space will be used.
+Do you want to continue? [Y/n] N
+Abort.
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ apt search firefox
+Sorting... 0%Sorting... 0%Sorting... 1%Sorting... Done
+Full Text Search... 50%Full Text Search... 50%Full Text Search... Done
+[32mamule-gnome-support[0m/xenial,xenial 2.4.0~git20151120.0023527bc2-1ubuntu1 all
+  ed2k links handling support for GNOME web browsers
+
+[32mbleachbit[0m/xenial,xenial 1.10-1 all
+  delete unnecessary files from the system
+
+[32mbrowser-plugin-freshplayer-libpdf[0m/xenial-updates 0.3.4-3ubuntu0.1 amd64
+  PPAPI-host NPAPI-plugin adapter for libpdf.so from Chrome
+
+[32mbrowser-plugin-freshplayer-nacl[0m/xenial-updates 0.3.4-3ubuntu0.1 amd64
+  PPAPI-host NPAPI-plugin adapter for Native Client from Chrome
+
+[32mbrowser-plugin-freshplayer-pepperflash[0m/xenial-updates 0.3.9-0ubuntu0.16.04.1 amd64
+  PPAPI-host NPAPI-plugin adapter for pepperflash
+
+[32mbrowser-plugin-gnash[0m/xenial 0.8.11~git20160109-1build1 amd64
+  GNU Shockwave Flash (SWF) player - Plugin for Mozilla and derivatives
+
+[32mbrowser-plugin-vlc[0m/xenial 2.0.6-4 amd64
+  multimedia plugin for web browsers based on VLC
+
+[32mchrome-gnome-shell[0m/xenial-updates,xenial-updates 9-0ubuntu1~ubuntu16.04.3 all
+  GNOME Shell extensions integration for web browsers
+
+[32mcollabtive[0m/xenial,xenial 2.0+dfsg-6ubuntu1 all
+  Web-based project management software
+
+[32medubuntu-artwork[0m/xenial,xenial 15.12.1 all
+  edubuntu themes and artwork
+
+[32mfirefox[0m/xenial-updates,xenial-security,now 66.0.3+build1-0ubuntu0.16.04.1 amd64 [installed]
+  Safe and easy web browser from Mozilla
+
+[32mfirefox-dbg[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Safe and easy web browser from Mozilla - debug symbols
+
+[32mfirefox-dev[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Safe and easy web browser from Mozilla - development files
+
+[32mfirefox-globalmenu[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Safe and easy web browser from Mozilla (transitional package)
+
+[32mfirefox-launchpad-plugin[0m/xenial,xenial 0.5 all
+  Launchpad firefox integration
+
+[32mfirefox-locale-af[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Afrikaans language pack for Firefox
+
+[32mfirefox-locale-an[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Aragonese language pack for Firefox
+
+[32mfirefox-locale-ar[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Arabic language pack for Firefox
+
+[32mfirefox-locale-as[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Assamese language pack for Firefox
+
+[32mfirefox-locale-ast[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Asturian language pack for Firefox
+
+[32mfirefox-locale-az[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Azerbaijani language pack for Firefox
+
+[32mfirefox-locale-be[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Belarusian language pack for Firefox
+
+[32mfirefox-locale-bg[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Bulgarian language pack for Firefox
+
+[32mfirefox-locale-bn[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Bengali language pack for Firefox
+
+[32mfirefox-locale-br[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Breton language pack for Firefox
+
+[32mfirefox-locale-bs[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Bosnian language pack for Firefox
+
+[32mfirefox-locale-ca[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Catalan; Valencian language pack for Firefox
+
+[32mfirefox-locale-cak[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Kaqchikel language pack for Firefox
+
+[32mfirefox-locale-cs[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Czech language pack for Firefox
+
+[32mfirefox-locale-csb[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Transitional package for unavailable language
+
+[32mfirefox-locale-cy[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Welsh language pack for Firefox
+
+[32mfirefox-locale-da[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Danish language pack for Firefox
+
+[32mfirefox-locale-de[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  German language pack for Firefox
+
+[32mfirefox-locale-el[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Greek language pack for Firefox
+
+[32mfirefox-locale-en[0m/xenial-updates,xenial-security,now 66.0.3+build1-0ubuntu0.16.04.1 amd64 [installed]
+  English language pack for Firefox
+
+[32mfirefox-locale-eo[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Esperanto language pack for Firefox
+
+[32mfirefox-locale-es[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Spanish; Castilian language pack for Firefox
+
+[32mfirefox-locale-et[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Estonian language pack for Firefox
+
+[32mfirefox-locale-eu[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Basque language pack for Firefox
+
+[32mfirefox-locale-fa[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Persian language pack for Firefox
+
+[32mfirefox-locale-fi[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Finnish language pack for Firefox
+
+[32mfirefox-locale-fr[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  French language pack for Firefox
+
+[32mfirefox-locale-fy[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Western Frisian language pack for Firefox
+
+[32mfirefox-locale-ga[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Irish language pack for Firefox
+
+[32mfirefox-locale-gd[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Gaelic; Scottish Gaelic language pack for Firefox
+
+[32mfirefox-locale-gl[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Galician language pack for Firefox
+
+[32mfirefox-locale-gn[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Guarani language pack for Firefox
+
+[32mfirefox-locale-gu[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Gujarati language pack for Firefox
+
+[32mfirefox-locale-he[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Hebrew language pack for Firefox
+
+[32mfirefox-locale-hi[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Hindi language pack for Firefox
+
+[32mfirefox-locale-hr[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Croatian language pack for Firefox
+
+[32mfirefox-locale-hsb[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Sorbian, Upper language pack for Firefox
+
+[32mfirefox-locale-hu[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Hungarian language pack for Firefox
+
+[32mfirefox-locale-hy[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Armenian language pack for Firefox
+
+[32mfirefox-locale-ia[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Interlingua language pack for Firefox
+
+[32mfirefox-locale-id[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Indonesian language pack for Firefox
+
+[32mfirefox-locale-is[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Icelandic language pack for Firefox
+
+[32mfirefox-locale-it[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Italian language pack for Firefox
+
+[32mfirefox-locale-ja[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Japanese language pack for Firefox
+
+[32mfirefox-locale-ka[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Georgian language pack for Firefox
+
+[32mfirefox-locale-kab[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Kabyle language pack for Firefox
+
+[32mfirefox-locale-kk[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Kazakh language pack for Firefox
+
+[32mfirefox-locale-km[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Central Khmer language pack for Firefox
+
+[32mfirefox-locale-kn[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Kannada language pack for Firefox
+
+[32mfirefox-locale-ko[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Korean language pack for Firefox
+
+[32mfirefox-locale-ku[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Transitional package for unavailable language
+
+[32mfirefox-locale-lg[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Transitional package for unavailable language
+
+[32mfirefox-locale-lt[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Lithuanian language pack for Firefox
+
+[32mfirefox-locale-lv[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Latvian language pack for Firefox
+
+[32mfirefox-locale-mai[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Maithili language pack for Firefox
+
+[32mfirefox-locale-mk[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Macedonian language pack for Firefox
+
+[32mfirefox-locale-ml[0m/xenial-updates,xenial-security,now 66.0.3+build1-0ubuntu0.16.04.1 amd64 [installed]
+  Malayalam language pack for Firefox
+
+[32mfirefox-locale-mn[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Transitional package for unavailable language
+
+[32mfirefox-locale-mr[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Marathi language pack for Firefox
+
+[32mfirefox-locale-ms[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Malay language pack for Firefox
+
+[32mfirefox-locale-my[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Myanmar language pack for Firefox
+
+[32mfirefox-locale-nb[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Bokmål, Norwegian; Norwegian Bokmål language pack for Firefox
+
+[32mfirefox-locale-ne[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Nepali language pack for Firefox
+
+[32mfirefox-locale-nl[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Dutch; Flemish language pack for Firefox
+
+[32mfirefox-locale-nn[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Norwegian Nynorsk; Nynorsk, Norwegian language pack for Firefox
+
+[32mfirefox-locale-nso[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Transitional package for unavailable language
+
+[32mfirefox-locale-oc[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Occitan (post 1500) language pack for Firefox
+
+[32mfirefox-locale-or[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Oriya language pack for Firefox
+
+[32mfirefox-locale-pa[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Panjabi; Punjabi language pack for Firefox
+
+[32mfirefox-locale-pl[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Polish language pack for Firefox
+
+[32mfirefox-locale-pt[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Portuguese language pack for Firefox
+
+[32mfirefox-locale-ro[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Romanian language pack for Firefox
+
+[32mfirefox-locale-ru[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Russian language pack for Firefox
+
+[32mfirefox-locale-si[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Sinhala; Sinhalese language pack for Firefox
+
+[32mfirefox-locale-sk[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Slovak language pack for Firefox
+
+[32mfirefox-locale-sl[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Slovenian language pack for Firefox
+
+[32mfirefox-locale-sq[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Albanian language pack for Firefox
+
+[32mfirefox-locale-sr[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Serbian language pack for Firefox
+
+[32mfirefox-locale-sv[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Swedish language pack for Firefox
+
+[32mfirefox-locale-sw[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Transitional package for unavailable language
+
+[32mfirefox-locale-ta[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Tamil language pack for Firefox
+
+[32mfirefox-locale-te[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Telugu language pack for Firefox
+
+[32mfirefox-locale-th[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Thai language pack for Firefox
+
+[32mfirefox-locale-tr[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Turkish language pack for Firefox
+
+[32mfirefox-locale-uk[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Ukrainian language pack for Firefox
+
+[32mfirefox-locale-ur[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Urdu language pack for Firefox
+
+[32mfirefox-locale-uz[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Uzbek language pack for Firefox
+
+[32mfirefox-locale-vi[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Vietnamese language pack for Firefox
+
+[32mfirefox-locale-xh[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Xhosa language pack for Firefox
+
+[32mfirefox-locale-zh-hans[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Simplified Chinese language pack for Firefox
+
+[32mfirefox-locale-zh-hant[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Traditional Chinese language pack for Firefox
+
+[32mfirefox-locale-zu[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Transitional package for unavailable language
+
+[32mfirefox-mozsymbols[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Safe and easy web browser from Mozilla - Breakpad symbols
+
+[32mfirefox-testsuite[0m/xenial-updates,xenial-security 66.0.3+build1-0ubuntu0.16.04.1 amd64
+  Safe and easy web browser from Mozilla - testsuite
+
+[32mflashplugin-installer[0m/xenial-updates,xenial-security 32.0.0.171ubuntu0.16.04.1 amd64 [residual-config]
+  Adobe Flash Player plugin installer
+
+[32mgcc-mozilla[0m/xenial-updates,xenial-security 6.4.0-0ubuntu0.16.04.3 amd64
+  GCC, the GNU Compiler Collection
+
+[32mgnome-do[0m/xenial 0.95.3-5 amd64
+  Quickly perform actions on your desktop
+
+[32mgnome-do-plugins[0m/xenial,xenial 0.8.5-4 all
+  Extra functionality for GNOME Do
+
+[32mgplanarity[0m/xenial 17906-5 amd64
+  simple puzzle game involving untangling planar graphs
+
+[32mgtkcookie[0m/xenial 0.4-5 amd64
+  editor for cookie files
+
+[32mhtml2wml[0m/xenial,xenial 0.4.11-1.1 all
+  converts HTML pages to WML (WAP) or i-mode pages
+
+[32mjsxgraph[0m/xenial,xenial 0.99.3~dfsg1-1 all
+  Interactive Geometry with JavaScript
+
+[32mkdocker[0m/xenial 4.6-2 amd64
+  lets you dock any application into the system tray
+
+[32mkpartsplugin[0m/xenial 20120605-1 amd64
+  Netscape-compatible plugin to embed KDE file-viewers into browser
+
+[32mlibcss-parser-pp0v5[0m/xenial 0.86-1 amd64
+  simple CSS1 parser library for C++
+
+[32mlibcss-parser0[0m/xenial 0.86-1 amd64
+  simple CSS1 parser library for C
+
+[32mlibhtml-widgets-selectlayers-perl[0m/xenial,xenial 0.07-2 all
+  Perl extension for selectable HTML layers
+
+[32mlibhtmlcxx-dev[0m/xenial 0.86-1 amd64
+  simple HTML/CSS1 parser library for C++ (development)
+
+[32mlibhtmlcxx3v5[0m/xenial 0.86-1 amd64
+  simple HTML parser library for C++
+
+[32mlibhtmlunit-core-js-java[0m/xenial,xenial 2.8-1 all
+  GUI-Less browser for Java programs - JavaScript engine
+
+[32mlibhtmlunit-java[0m/xenial,xenial 2.8-1ubuntu2 all
+  GUI-Less browser for Java programs
+
+[32mlibjs-dompurify[0m/xenial,xenial 0.7.3~dfsg1-2 all
+  XSS sanitizer for HTML, MathML and SVG
+
+[32mlibjs-excanvas[0m/xenial,xenial 0.r3-4 all
+  HTML5 Canvas for Internet Explorer
+
+[32mlibjs-expect.js[0m/xenial,xenial 0.3.1+dfsg-1 all
+  behavior driven test assertions - JavaScript library
+
+[32mlibjs-extjs[0m/xenial,xenial 3.4.0+dfsg1-1 all
+  cross-browser JavaScript library
+
+[32mlibjs-extjs-doc[0m/xenial,xenial 3.4.0+dfsg1-1 all
+  cross-browser JavaScript library (docs)
+
+[32mlibjs-graphael[0m/xenial,xenial 0.5+dfsg-1 all
+  charts for raphael
+
+[32mlibjs-jquery-jplayer[0m/xenial,xenial 2.7.1+dfsg-1 all
+  HTML5 Audio & Video for jQuery with a Flash fallback
+
+[32mlibjs-jquery-jush[0m/xenial,xenial 10-2ubuntu2 all
+  jQuery Syntax Highlighter
+
+[32mlibjs-require-css[0m/xenial,xenial 0.1.0-2 all
+  requiring and optimization with almond support
+
+[32mlibjs-requirejs[0m/xenial,xenial 2.1.22-1 all
+  JavaScript file and module loader
+
+[32mlibparse-http-useragent-perl[0m/xenial,xenial 0.39-2 all
+  parser for the HTTP User Agent string
+
+[32mlibreoffice[0m/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial6 amd64
+  office productivity suite (metapackage)
+
+[32mmozvoikko[0m/xenial,xenial 2.0.1-1ubuntu3 all
+  Finnish spell-checker extension for Firefox (transitional package)
+
+[32mnode-dompurify[0m/xenial,xenial 0.7.3~dfsg1-2 all
+  XSS sanitizer for HTML, MathML and SVG - Node.js module
+
+[32mnode-expect.js[0m/xenial,xenial 0.3.1+dfsg-1 all
+  behavior driven test assertions - Node.js module
+
+[32mnode-requirejs[0m/xenial,xenial 2.1.22-1 all
+  JavaScript file and module loader - NodeJS
+
+[32mnode-url-parse[0m/xenial,xenial 1.0.5-2 all
+  Parse URL in node using the URL module and in the browser using the DOM
+
+[32mnss-passwords[0m/xenial 0.2-2 amd64
+  read passwords from a Mozilla keyring
+
+[32mpasswordmaker-cli[0m/xenial 1.5+dfsg-3build1 amd64
+  creates unique, secure passwords - CLI version
+
+[32mpcmanfm[0m/xenial-updates,xenial-security 1.2.4-1ubuntu0.1 amd64
+  extremely fast and lightweight file manager
+
+[32mpython-selenium[0m/xenial,xenial 2.48.0+dfsg1-2 all
+  Python bindings for Selenium
+
+[32mpython3-selenium[0m/xenial,xenial 2.48.0+dfsg1-2 all
+  Python3 bindings for Selenium
+
+[32mrhythmbox-mozilla[0m/xenial 3.3-1ubuntu7 amd64
+  Rhythmbox Mozilla plugin
+
+[32mruby-http-cookie[0m/xenial,xenial 1.0.2-1 all
+  Ruby library to handle HTTP Cookies based on RFC 6265
+
+[32mruby-rails-assets-jquery-fullscreen-plugin[0m/xenial,xenial 0.5.0+dfsg-1 all
+  jQuery fullscreen plugin for rails applications
+
+[32msemanticscuttle[0m/xenial,xenial 0.98.5+dfsg-1ubuntu1 all
+  Self-hosted and web-based social bookmark manager
+
+[32msquareness[0m/xenial,xenial 2.3.0-6 all
+  suite of skins for different applications
+
+[32msugar-firefox-activity[0m/xenial,xenial 6+dfsg-0ubuntu3 all
+  Mozilla Firefox browser for the Sugar desktop
+
+[32mthunderbird-mozsymbols[0m/xenial-updates,xenial-security 1:60.6.1+build2-0ubuntu0.16.04.1 amd64
+  Email, RSS and newsgroup client - Breakpad symbols
+
+[32mtinymce[0m/xenial,xenial 3.4.8+dfsg0-1 all
+  platform independent web based Javascript/HTML WYSIWYG editor
+
+[32mtor[0m/xenial-updates,xenial-security 0.2.9.14-1ubuntu1~16.04.3 amd64
+  anonymizing overlay network for TCP
+
+[32mubuntu-defaults-builder[0m/xenial-updates,xenial-updates 0.55~16.04.2 all
+  create Ubuntu customization packages
+
+[32mubuntu-online-tour[0m/xenial,xenial 0.11-0ubuntu4 all
+  Experience Ubuntu in your web browser
+
+[32muget[0m/xenial 2.0.2-1ubuntu1 amd64
+  easy-to-use download manager written in GTK+
+
+[32munity-scope-firefoxbookmarks[0m/xenial,xenial,now 0.1+13.10.20130809.1-0ubuntu1 all [installed]
+  Firefox bookmarks scope for Unity
+
+[32mxul-ext-colorfultabs[0m/xenial,xenial 29.9+dfsg-1 all
+  Color tabs differently and make them easy to distinguish
+
+[32mxul-ext-kwallet5[0m/xenial 1.0-1 amd64
+  kwallet integration for firefox
+
+[32mxul-ext-mozvoikko[0m/xenial,xenial 2.0.1-1ubuntu3 all
+  Finnish spell-checker extension for Firefox
+
+[32mxul-ext-password-editor[0m/xenial,xenial 2.9.6-1 all
+  edit password manager entries in Mozilla applications
+
+[32mxul-ext-ubufox[0m/xenial-updates,xenial-updates,xenial-security,xenial-security,now 3.4-0ubuntu0.16.04.2 all [installed]
+  Ubuntu modifications for Firefox
+
+[32mxul-ext-video-without-flash[0m/xenial,xenial 3.1.1-1 all
+  extension to watch videos without the Flash plugin
+
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ apt search firefox[C[K[K[K[K[K[K[Kchrome
+Sorting... 0%Sorting... 0%Sorting... 1%Sorting... Done
+Full Text Search... 50%Full Text Search... 50%Full Text Search... Done
+[32mbrowser-plugin-freshplayer-libpdf[0m/xenial-updates 0.3.4-3ubuntu0.1 amd64
+  PPAPI-host NPAPI-plugin adapter for libpdf.so from Chrome
+
+[32mbrowser-plugin-freshplayer-nacl[0m/xenial-updates 0.3.4-3ubuntu0.1 amd64
+  PPAPI-host NPAPI-plugin adapter for Native Client from Chrome
+
+[32mbrowser-plugin-freshplayer-pepperflash[0m/xenial-updates 0.3.9-0ubuntu0.16.04.1 amd64
+  PPAPI-host NPAPI-plugin adapter for pepperflash
+
+[32mchrome-gnome-shell[0m/xenial-updates,xenial-updates 9-0ubuntu1~ubuntu16.04.3 all
+  GNOME Shell extensions integration for web browsers
+
+[32mchromium-browser[0m/xenial-updates,xenial-security 73.0.3683.86-0ubuntu0.16.04.1 amd64
+  Chromium web browser, open-source version of Chrome
+
+[32mchromium-chromedriver[0m/xenial-updates,xenial-security 73.0.3683.86-0ubuntu0.16.04.1 amd64
+  WebDriver driver for the Chromium Browser
+
+[32mchromium-chromedriver-dbg[0m/xenial-updates,xenial-security 51.0.2704.79-0ubuntu0.16.04.1.1242 amd64
+  chromium-chromedriver debug symbols
+
+[32mchromium-lwn4chrome[0m/xenial,xenial 1.0-2 all
+  Chromium extension for making LWN.net slightly easier to read
+
+[32mcollabtive[0m/xenial,xenial 2.0+dfsg-6ubuntu1 all
+  Web-based project management software
+
+[32mdicomscope[0m/xenial,xenial 3.6.0-15build1 all
+  OFFIS DICOM Viewer
+
+[32mdicomscope-doc[0m/xenial,xenial 3.6.0-15build1 all
+  OFFIS DICOM Viewer - documentation
+
+[32mepiphany-browser[0m/xenial-updates,xenial-security 3.18.11-0ubuntu1 amd64
+  Intuitive GNOME web browser
+
+[32mfonts-roboto[0m/xenial-updates,xenial-updates 2:0~20160106-1ubuntu0.1 all
+  metapackage to pull in Roboto fonts
+
+[32mfonts-roboto-hinted[0m/xenial-updates,xenial-updates 2:0~20160106-1ubuntu0.1 all
+  Google's signature family of fonts (hinted)
+
+[32mfonts-roboto-unhinted[0m/xenial-updates,xenial-updates 2:0~20160106-1ubuntu0.1 all
+  Google's signature family of fonts (unhinted)
+
+[32mgoogle-chrome-beta[0m/stable 74.0.3729.108-1 amd64
+  The web browser from Google
+
+[32mgoogle-chrome-stable[0m/stable 74.0.3729.108-1 amd64 [upgradable from: 71.0.3578.98-1]
+  The web browser from Google
+
+[32mgoogle-chrome-unstable[0m/stable 75.0.3766.2-1 amd64
+  The web browser from Google
+
+[32mgoogle-cloud-print-connector[0m/xenial 0.0~git20151105.24.1902938-2 amd64
+  Google Cloud Print CUPS Connector
+
+[32mjsxgraph[0m/xenial,xenial 0.99.3~dfsg1-1 all
+  Interactive Geometry with JavaScript
+
+[32mkpartsplugin[0m/xenial 20120605-1 amd64
+  Netscape-compatible plugin to embed KDE file-viewers into browser
+
+[32mlibdicomscope-jni[0m/xenial 3.6.0-15build1 amd64
+  OFFIS DICOM Viewer (JNI files)
+
+[32mlibjs-dompurify[0m/xenial,xenial 0.7.3~dfsg1-2 all
+  XSS sanitizer for HTML, MathML and SVG
+
+[32mlibjs-excanvas[0m/xenial,xenial 0.r3-4 all
+  HTML5 Canvas for Internet Explorer
+
+[32mlibjs-expect.js[0m/xenial,xenial 0.3.1+dfsg-1 all
+  behavior driven test assertions - JavaScript library
+
+[32mlibjs-jquery-fullscreen[0m/xenial,xenial 10-2ubuntu2 all
+  jQuery FullScreen Plugin
+
+[32mlibjs-jquery-fullscreen-plugin[0m/xenial,xenial 0.5.0+dfsg-1 all
+  plugin for showing any DOM element on a page in fullscreen mode
+
+[32mlibjs-jquery-jplayer[0m/xenial,xenial 2.7.1+dfsg-1 all
+  HTML5 Audio & Video for jQuery with a Flash fallback
+
+[32mlibjs-jquery-jush[0m/xenial,xenial 10-2ubuntu2 all
+  jQuery Syntax Highlighter
+
+[32mlibjs-require-css[0m/xenial,xenial 0.1.0-2 all
+  requiring and optimization with almond support
+
+[32mlibjs-requirejs[0m/xenial,xenial 2.1.22-1 all
+  JavaScript file and module loader
+
+[32mlibparse-http-useragent-perl[0m/xenial,xenial 0.39-2 all
+  parser for the HTTP User Agent string
+
+[32mlibslang2-dev[0m/xenial-updates 2.3.0-2ubuntu1.1 amd64
+  S-Lang programming library, development version
+
+[32mlibxpm-dev[0m/xenial-updates,xenial-security 1:3.5.11-1ubuntu0.16.04.1 amd64
+  X11 pixmap library (development headers)
+
+[32mlibxpm4[0m/xenial-updates,xenial-security,now 1:3.5.11-1ubuntu0.16.04.1 amd64 [installed]
+  X11 pixmap library
+
+[32mlibxpm4-dbg[0m/xenial-updates,xenial-security 1:3.5.11-1ubuntu0.16.04.1 amd64
+  X11 pixmap library (debug package)
+
+[32mlinuxlogo[0m/xenial 5.11-8 amd64
+  Color ANSI System Logo
+
+[32mminidjvu[0m/xenial 0.8.svn.2010.05.06+dfsg-5 amd64
+  Monochrome DjVu multipage encoder, single page encoder/decoder
+
+[32mmurrine-themes[0m/xenial,xenial 0.98.6ubuntu1 all
+  themes for gtk2 murrine engine
+
+[32mnode-dompurify[0m/xenial,xenial 0.7.3~dfsg1-2 all
+  XSS sanitizer for HTML, MathML and SVG - Node.js module
+
+[32mnode-expect.js[0m/xenial,xenial 0.3.1+dfsg-1 all
+  behavior driven test assertions - Node.js module
+
+[32mnode-requirejs[0m/xenial,xenial 2.1.22-1 all
+  JavaScript file and module loader - NodeJS
+
+[32mnodejs[0m/xenial-updates,xenial-security 4.2.6~dfsg-1ubuntu4.2 amd64
+  evented I/O for V8 javascript
+
+[32mnodejs-dbg[0m/xenial-updates,xenial-security 4.2.6~dfsg-1ubuntu4.2 amd64
+  evented I/O for V8 javascript (debug)
+
+[32mnodejs-dev[0m/xenial-updates,xenial-security 4.2.6~dfsg-1ubuntu4.2 amd64
+  evented I/O for V8 javascript (development files)
+
+[32mnodejs-legacy[0m/xenial-updates,xenial-updates,xenial-security,xenial-security 4.2.6~dfsg-1ubuntu4.2 all
+  evented I/O for V8 javascript (legacy symlink)
+
+[32mnodejs-mozilla[0m/xenial-updates,xenial-security 8.14.0-0ubuntu0.16.04.1 amd64
+  evented I/O for V8 javascript
+
+[32mpd-jmmmp[0m/xenial,xenial 0.1.1-1 all
+  a collection of Pd GUI objects for musical performance
+
+[32mpepperflashplugin-nonfree[0m/xenial-updates 1.8.2ubuntu1.1 amd64
+  Pepper Flash Player - browser plugin
+
+[32mphp-analog[0m/xenial,xenial 1.0.7-1build1 all
+  PHP micro logging package
+
+[32mpicon-domains[0m/xenial,xenial 2015.11.23-1 all
+  Picon (Personal Images) database of Internet domain logos
+
+[32mpicon-misc[0m/xenial,xenial 2015.01.24-1 all
+  Picon (Personal Images) database of common accounts and misc
+
+[32mpicon-news[0m/xenial,xenial 2015.01.24-1 all
+  Picon (Personal Images) db of Usenet newsgroups and hierarchies
+
+[32mpicon-unknown[0m/xenial,xenial 2015.01.24-1 all
+  Picon (Personal Images) database for very high-level domains
+
+[32mpicon-usenix[0m/xenial,xenial 1995.04.13-8 all
+  Picon (Personal Images) db of Usenix conference attendees
+
+[32mpicon-users[0m/xenial,xenial 2015.05.08-1 all
+  Picon (Personal Images) database of individual Internet accounts
+
+[32mpicon-weather[0m/xenial,xenial 2015.01.02-1 all
+  Picon (Personal Images) database for displaying weather forecasts
+
+[32mprinter-driver-splix[0m/xenial,now 2.0.0+svn315-4fakesync1 amd64 [installed]
+  Driver for Samsung and Xerox SPL2 and SPLc laser printers
+
+[32mpython-selenium[0m/xenial,xenial 2.48.0+dfsg1-2 all
+  Python bindings for Selenium
+
+[32mpython3-selenium[0m/xenial,xenial 2.48.0+dfsg1-2 all
+  Python3 bindings for Selenium
+
+[32mruby-rack-pjax[0m/xenial,xenial 0.7.0-2 all
+  serve pjax responses through rack middleware
+
+[32mruby-rails-assets-jquery-fullscreen-plugin[0m/xenial,xenial 0.5.0+dfsg-1 all
+  jQuery fullscreen plugin for rails applications
+
+[32mvboot-kernel-utils[0m/xenial 0~20121212-3 amd64
+  Chrome OS verified boot utils required to sign kernels
+
+[32mvboot-utils[0m/xenial 0~20121212-3 amd64
+  Chrome OS verified boot utils
+
+[32mwebsockify[0m/xenial-updates 0.6.1+dfsg1-1ubuntu1 amd64
+  WebSockets support for any application/server
+
+[32mxpat2[0m/xenial 1.07-19 amd64
+  Generic patience game for X11
+
+[32mxphoon[0m/xenial 20000613+0-3 amd64
+  sets the root window to a picture of the moon
+
+[32mxserver-xorg-video-openchrome[0m/xenial 1:0.3.3+git20160310-1 amd64
+  X.Org X server -- VIA display driver
+
+[32mxserver-xorg-video-openchrome-dbg[0m/xenial 1:0.3.3+git20160310-1 amd64
+  X.Org X server -- VIA display driver -- debugging symbols
+
+[32mxserver-xorg-video-openchrome-hwe-16.04[0m/xenial-updates 1:0.5.0-3build1~16.04.1 amd64
+  X.Org X server -- VIA display driver
+
+[32mxserver-xorg-video-openchrome-lts-utopic[0m/xenial-updates 3:13 amd64
+  Transitional package for xserver-xorg-video-openchrome-lts-utopic
+
+[32mxserver-xorg-video-openchrome-lts-utopic-dbg[0m/xenial-updates 3:13 amd64
+  Transitional package for xserver-xorg-video-openchrome-lts-utopic-dbg
+
+[32mxserver-xorg-video-openchrome-lts-vivid[0m/xenial-updates 3:13 amd64
+  Transitional package for xserver-xorg-video-openchrome-lts-vivid
+
+[32mxserver-xorg-video-openchrome-lts-vivid-dbg[0m/xenial-updates 3:13 amd64
+  Transitional package for xserver-xorg-video-openchrome-lts-vivid-dbg
+
+[32mxserver-xorg-video-openchrome-lts-wily[0m/xenial-updates 3:13 amd64
+  Transitional package for xserver-xorg-video-openchrome-lts-wily
+
+[32mxserver-xorg-video-openchrome-lts-wily-dbg[0m/xenial-updates 3:13 amd64
+  Transitional package for xserver-xorg-video-openchrome-lts-wily-dbg
+
+[32mxserver-xorg-video-openchrome-lts-xenial[0m/xenial-updates 3:13 amd64
+  Transitional package for xserver-xorg-video-openchrome-lts-xenial
+
+[32mxserver-xorg-video-openchrome-lts-xenial-dbg[0m/xenial-updates 3:13 amd64
+  Transitional package for xserver-xorg-video-openchrome-lts-xenial-dbg
+
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ apt install 
+Display all 57949 possibilities? (y or n)
+0ad
+0ad-data
+0ad-data-common
+0ad-dbg
+0install
+0install-core
+0xffff
+2048-qt
+2ping
+2vcard
+3270-common
+389-admin
+389-admin-console
+389-console
+389-ds
+389-ds-base
+389-ds-base-dbg
+389-ds-base-dev
+389-ds-base-libs
+389-ds-base-libs-dbg
+389-ds-console
+389-ds-console-doc
+389-dsgw
+--More--[K3dchess
+--More--[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C^C
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ apt search chromefirefox[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kapt install vlc
+vlc                    vlc-plugin-jack        vlc-plugin-svg
+vlc-data               vlc-plugin-notify      vlc-plugin-vlsub
+vlc-nox                vlc-plugin-samba       vlc-plugin-zvbi
+vlc-plugin-fluidsynth  vlc-plugin-sdl         
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ apt install vlc
+E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ y
+y: command not found
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ y[Ksudo apt search
+E: You must give at least one search pattern
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo apt search vlc
+Sorting... 0%Sorting... 0%Sorting... 1%Sorting... Done
+Full Text Search... 50%Full Text Search... 50%Full Text Search... Done
+[32mbrowser-plugin-vlc[0m/xenial 2.0.6-4 amd64
+  multimedia plugin for web browsers based on VLC
+
+[32mcubemap[0m/xenial 1.2.1-1 amd64
+  scalable video reflector, designed to be used with VLC
+
+[32mdvblast[0m/xenial 3.0-1 amd64
+  Simple and powerful dvb-streaming application
+
+[32mfp-units-multimedia[0m/xenial 3.0.0+dfsg-2 amd64
+  Free Pascal - multimedia units dependency package
+
+[32mfp-units-multimedia-3.0.0[0m/xenial 3.0.0+dfsg-2 amd64
+  Free Pascal - multimedia units
+
+[32mfreeplayer[0m/xenial,xenial 20070531+dfsg.1-5 all
+  wrapper around vlc for French ADSL FreeBox
+
+[32mfreetuxtv[0m/xenial 0.6.6~dfsg1-1 amd64
+  Internet television and radio player
+
+[32mgetstream[0m/xenial 20081204-1.2ubuntu1 amd64
+  DVB streaming application
+
+[32mhdhomerun-config[0m/xenial 20150826-2 amd64
+  Configuration utility for Silicon Dust HD HomeRun
+
+[32mhdhomerun-config-gui[0m/xenial-updates 20150826-0ubuntu1.16.04.0 amd64
+  GUI Configuration utility for Silicon Dust HD HomeRun
+
+[32mladitools[0m/xenial,xenial 1.1.0-2 all
+  Linux Audio Desktop Integration Tools
+
+[32mlibbluray-bdj[0m/xenial,xenial 1:0.9.2-2 all
+  Blu-ray Disc Java support library (BD-J library)
+
+[32mlibbluray-bin[0m/xenial 1:0.9.2-2 amd64
+  Blu-ray disc playback support library (tools)
+
+[32mlibbluray-dev[0m/xenial 1:0.9.2-2 amd64
+  Blu-ray disc playback support library (development files)
+
+[32mlibbluray-doc[0m/xenial,xenial 1:0.9.2-2 all
+  Blu-ray disc playback support library (documentation)
+
+[32mlibbluray1[0m/xenial,now 1:0.9.2-2 amd64 [installed,automatic]
+  Blu-ray disc playback support library (shared library)
+
+[32mlibdvd-pkg[0m/xenial,xenial 1.4.0-1-1 all
+  DVD-Video playing library - installer
+
+[32mlibhdhomerun-dev[0m/xenial 20150826-2 amd64
+  Development library for Silicon Dust HD HomeRun
+
+[32mlibhdhomerun2[0m/xenial 20150826-2 amd64
+  Library for Silicon Dust HD HomeRun
+
+[32mlibvcdinfo-dev[0m/xenial 0.7.24+dfsg-0.2 amd64
+  library to extract information from VideoCD (development files)
+
+[32mlibvcdinfo0[0m/xenial,now 0.7.24+dfsg-0.2 amd64 [installed,automatic]
+  library to extract information from VideoCD
+
+[32mlibvlc-dev[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  development files for libvlc
+
+[32mlibvlc5[0m/xenial-updates,xenial-security,now 2.2.2-5ubuntu0.16.04.4 amd64 [installed,automatic]
+  multimedia player and streamer library
+
+[32mlibvlccore-dev[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  development files for libvlccore
+
+[32mlibvlccore8[0m/xenial-updates,xenial-security,now 2.2.2-5ubuntu0.16.04.4 amd64 [installed,automatic]
+  base library for VLC and its modules
+
+[32mlivestreamer[0m/xenial,xenial 1.12.2-1 all
+  CLI that pipes video streams to video players
+
+[32mmimms[0m/xenial,xenial 3.2.2-1.1 all
+  mms (e.g. mms://) stream downloader
+
+[32mmpris-remote[0m/xenial,xenial 0.0~1.gpb7c7f5c6-1.1 all
+  command-line interface for mpris compatible media players
+
+[32mmythbuntu-lirc-generator[0m/xenial,xenial 0.26-0ubuntu2 all
+  Mythbuntu Lirc Configuration Generator
+
+[32mphonon-backend-vlc[0m/xenial 0.8.2-1ubuntu3 amd64
+  Phonon VLC backend
+
+[32mphonon-backend-vlc-dbg[0m/xenial 0.8.2-1ubuntu3 amd64
+  Phonon VLC backend debugging symbols
+
+[32mphonon4qt5-backend-vlc[0m/xenial 0.8.2-1ubuntu3 amd64
+  Phonon4Qt5 VLC backend
+
+[32mphonon4qt5-backend-vlc-dbg[0m/xenial 0.8.2-1ubuntu3 amd64
+  Phonon4Qt5 VLC backend debugging symbols
+
+[32mpidgin-mpris[0m/xenial 0.2.3-2 amd64
+  sets your available message to your currently playing track
+
+[32mpython3-pafy[0m/xenial,xenial 0.3.80-1build1 all
+  Download videos and retrieve metadata from YouTube
+
+[32msmtube[0m/xenial 15.5.10-1 amd64
+  YouTube videos browser
+
+[32mvlc[0m/xenial-updates,xenial-security,now 2.2.2-5ubuntu0.16.04.4 amd64 [installed]
+  multimedia player and streamer
+
+[32mvlc-data[0m/xenial-updates,xenial-updates,xenial-security,xenial-security,now 2.2.2-5ubuntu0.16.04.4 all [installed,automatic]
+  Common data for VLC
+
+[32mvlc-nox[0m/xenial-updates,xenial-security,now 2.2.2-5ubuntu0.16.04.4 amd64 [installed,automatic]
+  multimedia player and streamer (without X support)
+
+[32mvlc-plugin-fluidsynth[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  FluidSynth plugin for VLC
+
+[32mvlc-plugin-jack[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  Jack audio plugins for VLC
+
+[32mvlc-plugin-notify[0m/xenial-updates,xenial-security,now 2.2.2-5ubuntu0.16.04.4 amd64 [installed,automatic]
+  LibNotify plugin for VLC
+
+[32mvlc-plugin-samba[0m/xenial-updates,xenial-security,now 2.2.2-5ubuntu0.16.04.4 amd64 [installed,automatic]
+  Samba plugin for VLC
+
+[32mvlc-plugin-sdl[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  SDL video and audio output plugin for VLC
+
+[32mvlc-plugin-svg[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  SVG plugin for VLC
+
+[32mvlc-plugin-vlsub[0m/xenial,xenial 0.9.13-1 all
+  VLC extension to download subtitles from opensubtitles.org
+
+[32mvlc-plugin-zvbi[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  VBI teletext plugin for VLC
+
+[32mx264[0m/xenial 2:0.148.2643+git5c65704-1 amd64
+  video encoder for the H.264/MPEG-4 AVC standard
+
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ exit
+exit
+
+Script done on Thursday 25 April 2019 10:32:16 AM IST

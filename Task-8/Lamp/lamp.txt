@@ -1,0 +1,659 @@
+Script started on Thursday 25 April 2019 11:36:41 AM IST
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo apt-get update
+[sudo] password for cec: 
+0% [Working]            Ign:1 http://dl.google.com/linux/chrome/deb stable InRelease
+0% [Waiting for headers] [Waiting for headers] [Waiting for headers]                                                                    Hit:2 http://dl.google.com/linux/chrome/deb stable Release
+0% [Waiting for headers] [Waiting for headers] [Waiting for headers]0% [Release.gpg gpgv 943 B] [Waiting for headers] [Waiting for headers] [Waitin                                                                               Get:3 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
+0% [Release.gpg gpgv 943 B] [Waiting for headers] [3 InRelease 3,729 B/109 kB 3                                                                               Hit:4 http://archive.canonical.com/ubuntu xenial InRelease
+0% [Release.gpg gpgv 943 B] [Waiting for headers] [3 InRelease 14.8 kB/109 kB 1                                                                               0% [Release.gpg gpgv 943 B] [Waiting for headers]                                                 0% [Waiting for headers]0% [4 InRelease gpgv 11.5 kB] [Waiting for headers]                                                   Hit:6 http://in.archive.ubuntu.com/ubuntu xenial InRelease
+                                                   0% [4 InRelease gpgv 11.5 kB]                             0% [Waiting for headers]0% [3 InRelease gpgv 109 kB] [Waiting for headers]                                                  0% [Waiting for headers]0% [6 InRelease gpgv 247 kB] [Waiting for headers]                                                  0% [Waiting for headers]                        Get:7 http://in.archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
+0% [7 InRelease 5,193 B/109 kB 5%]                                  0% [Working]0% [7 InRelease gpgv 109 kB] [Waiting for headers]                                                  0% [Waiting for headers]                        Get:8 http://in.archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]
+0% [8 InRelease 3,745 B/107 kB 4%]                                  0% [Working]0% [8 InRelease gpgv 107 kB]                            100% [Working]              Fetched 325 kB in 1s (323 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 4%Reading package lists... 4%Reading package lists... 8%Reading package lists... 8%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 33%Reading package lists... 33%Reading package lists... 56%Reading package lists... 56%Reading package lists... 57%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 71%Reading package lists... 71%Reading package lists... 74%Reading package lists... 74%Reading package lists... 77%Reading package lists... 77%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 83%Reading package lists... 83%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 90%Reading package lists... 90%Reading package lists... 92%Reading package lists... 92%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... Done
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo apt-get install apache2
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+apache2 is already the newest version (2.4.18-2ubuntu3.10).
+0 upgraded, 0 newly installed, 0 to remove and 310 not upgraded.
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo apt-get install mysql-server
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+mysql-server is already the newest version (5.7.25-0ubuntu0.16.04.2).
+0 upgraded, 0 newly installed, 0 to remove and 310 not upgraded.
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ mysql_secure_installation
+
+Securing the MySQL server deployment.
+
+Enter password for user root: 
+Error: Access denied for user 'root'@'localhost' (using password: YES)
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following NEW packages will be installed:
+  libapache2-mod-php php php-mcrypt php-mysql
+0 upgraded, 4 newly installed, 0 to remove and 310 not upgraded.
+Need to get 9,714 B of archives.
+After this operation, 49.2 kB of additional disk space will be used.
+0% [Working]            Get:1 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libapache2-mod-php all 1:7.0+35ubuntu6.1 [2,990 B]
+25% [1 libapache2-mod-php 2,990 B/2,990 B 100%]                                               30% [Working]             Get:2 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 php all 1:7.0+35ubuntu6.1 [2,862 B]
+53% [2 php 2,862 B/2,862 B 100%]                                58% [Working]58% [Waiting for headers]                         Get:3 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 php-mcrypt all 1:7.0+35ubuntu6.1 [1,934 B]
+74% [3 php-mcrypt 1,934 B/1,934 B 100%]                                       79% [Working]             Get:4 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 php-mysql all 1:7.0+35ubuntu6.1 [1,928 B]
+95% [4 php-mysql 1,928 B/1,928 B 100%]                                      100% [Working]              Fetched 9,714 B in 0s (17.0 kB/s)
+Selecting previously unselected package libapache2-mod-php.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 216713 files and directories currently installed.)
+Preparing to unpack .../libapache2-mod-php_1%3a7.0+35ubuntu6.1_all.deb ...
+Unpacking libapache2-mod-php (1:7.0+35ubuntu6.1) ...
+Selecting previously unselected package php.
+Preparing to unpack .../php_1%3a7.0+35ubuntu6.1_all.deb ...
+Unpacking php (1:7.0+35ubuntu6.1) ...
+Selecting previously unselected package php-mcrypt.
+Preparing to unpack .../php-mcrypt_1%3a7.0+35ubuntu6.1_all.deb ...
+Unpacking php-mcrypt (1:7.0+35ubuntu6.1) ...
+Selecting previously unselected package php-mysql.
+Preparing to unpack .../php-mysql_1%3a7.0+35ubuntu6.1_all.deb ...
+Unpacking php-mysql (1:7.0+35ubuntu6.1) ...
+Setting up libapache2-mod-php (1:7.0+35ubuntu6.1) ...
+Setting up php (1:7.0+35ubuntu6.1) ...
+Setting up php-mcrypt (1:7.0+35ubuntu6.1) ...
+Setting up php-mysql (1:7.0+35ubuntu6.1) ...
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo apt-cache search php- | less
+[?1049h[?1h=libnet-libidn-perl - Perl bindings for GNU Libidn
+php-all-dev - package depending on all supported PHP development packages
+php-cgi - server-side, HTML-embedded scripting language (CGI binary) (default)
+php-cli - command-line interpreter for the PHP scripting language (default)
+php-common - Common files for PHP packages
+php-curl - CURL module for PHP [default]
+php-dev - Files for PHP module development (default)
+php-gd - GD module for PHP [default]
+php-gmp - GMP module for PHP [default]
+php-ldap - LDAP module for PHP [default]
+php-mysql - MySQL module for PHP [default]
+php-odbc - ODBC module for PHP [default]
+php-pear - PEAR Base System
+php-pgsql - PostgreSQL module for PHP [default]
+php-pspell - pspell module for PHP [default]
+php-recode - recode module for PHP [default]
+php-snmp - SNMP module for PHP [default]
+php-sqlite3 - SQLite3 module for PHP [default]
+php-tidy - tidy module for PHP [default]
+php-xmlrpc - XMLRPC-EPI module for PHP [default]
+php7.0-cgi - server-side, HTML-embedded scripting language (CGI binary)
+php7.0-cli - command-line interpreter for the PHP scripting language
+php7.0-common - documentation, examples and common module for PHP
+:[K[K [K^X^X[K^?^?[K:[K[K:[K[K:[K[K:[K[K:[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[Kphp7.0-curl - CURL module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-gd - GD module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-gmp - GMP module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-json - JSON module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-ldap - LDAP module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-mysql - MySQL module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-odbc - ODBC module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-opcache - Zend OpCache module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-pgsql - PostgreSQL module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-pspell - pspell module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-readline - readline module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-recode - recode module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-snmp - SNMP module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-sqlite3 - SQLite3 module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-tidy - tidy module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-xml - DOM, SimpleXML, WDDX, XML, and XSL module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-xmlrpc - XMLRPC-EPI module for PHP
+:[K[K [KESCESC[KOO[KBB[Kpkg-php-tools - various packaging tools and scripts for PHP packages
+:[K[K [KESCESC[KOO[KBB[Kbandwidthd-pgsql - Tracks usage of TCP/IP and builds html files with graphs
+:[K[K [KESCESC[KOO[KBB[Kbluefish - advanced Gtk+ text editor for web and software development
+:[K[K [KESCESC[KOO[KBB[Kcacti - web interface for graphing of monitoring systems
+:[K[K [KESCESC[KOO[KBB[Kcakephp-scripts - rapid application development framework for PHP (scripts)
+:[K[K [KESCESC[KOO[KBB[Kganglia-webfrontend - cluster monitoring toolkit - web front-end
+:[K[K [KESCESC[KOO[KBB[Khaserl - CGI scripting program for embedded environments
+:[K[K [KESCESC[KOO[KBB[Kkdevelop-php-dbg - debugging symbols for the KDevelop PHP plugin
+:[K[K [KESCESC[KOO[KBB[Kkdevelop-php-docs - PHP documentation plugin for KDevelop
+:[K[K [KESCESC[KOO[KBB[Kkdevelop-php-docs-l10n - localization files for KDevelop PHP documentation plugi :[K[K [KESCESC[KOO[KBB[Kn
+:[K[K [KESCESC[KOO[KBB[Kkdevelop-php-l10n - localization files for KDevelop PHP plugin
+:[K[K [KESCESC[KOO[KBB[Klibcode-tidyall-perl - your all-in-one code tidier and validator
+:[K[K [KESCESC[KOO[KAA[K[HMphp7.0-odbc - ODBC module for PHP
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp7.0-mysql - MySQL module for PHP
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp7.0-ldap - LDAP module for PHP
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp7.0-json - JSON module for PHP
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp7.0-gmp - GMP module for PHP
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp7.0-gd - GD module for PHP
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp7.0-curl - CURL module for PHP
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp7.0-common - documentation, examples and common module for PHP
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp7.0-cli - command-line interpreter for the PHP scripting language
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp7.0-cgi - server-side, HTML-embedded scripting language (CGI binary)
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp-xmlrpc - XMLRPC-EPI module for PHP [default]
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp-tidy - tidy module for PHP [default]
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp-sqlite3 - SQLite3 module for PHP [default]
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp-snmp - SNMP module for PHP [default]
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp-recode - recode module for PHP [default]
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp-pspell - pspell module for PHP [default]
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp-pgsql - PostgreSQL module for PHP [default]
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp-pear - PEAR Base System
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp-odbc - ODBC module for PHP [default]
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp-mysql - MySQL module for PHP [default]
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp-ldap - LDAP module for PHP [default]
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp-gmp - GMP module for PHP [default]
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp-gd - GD module for PHP [default]
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp-dev - Files for PHP module development (default)
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp-curl - CURL module for PHP [default]
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp-common - Common files for PHP packages
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp-cli - command-line interpreter for the PHP scripting language (default)
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp-cgi - server-side, HTML-embedded scripting language (CGI binary) (default)
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMphp-all-dev - package depending on all supported PHP development packages
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[HMlibnet-libidn-perl - Perl bindings for GNU Libidn
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[Kphp7.0-curl - CURL module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-gd - GD module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-gmp - GMP module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-json - JSON module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-ldap - LDAP module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-mysql - MySQL module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-odbc - ODBC module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-opcache - Zend OpCache module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-pgsql - PostgreSQL module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-pspell - pspell module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-readline - readline module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-recode - recode module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-snmp - SNMP module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-sqlite3 - SQLite3 module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-tidy - tidy module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-xml - DOM, SimpleXML, WDDX, XML, and XSL module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-xmlrpc - XMLRPC-EPI module for PHP
+:[K[K [KESCESC[KOO[KBB[Kpkg-php-tools - various packaging tools and scripts for PHP packages
+:[K[K [KESCESC[KOO[KBB[Kbandwidthd-pgsql - Tracks usage of TCP/IP and builds html files with graphs
+:[K[K [KESCESC[KOO[KBB[Kbluefish - advanced Gtk+ text editor for web and software development
+:[K[K [KESCESC[KOO[KBB[Kcacti - web interface for graphing of monitoring systems
+:[K[K [KESCESC[KOO[KBB[Kcakephp-scripts - rapid application development framework for PHP (scripts)
+:[K[K [KESCESC[KOO[KBB[Kganglia-webfrontend - cluster monitoring toolkit - web front-end
+:[K[K [KESCESC[KOO[KBB[Khaserl - CGI scripting program for embedded environments
+:[K[K [KESCESC[KOO[KBB[Kkdevelop-php-dbg - debugging symbols for the KDevelop PHP plugin
+:[K[K [KESCESC[KOO[KBB[Kkdevelop-php-docs - PHP documentation plugin for KDevelop
+:[K[K [KESCESC[KOO[KBB[Kkdevelop-php-docs-l10n - localization files for KDevelop PHP documentation plugi :[K[K [KESCESC[KOO[KBB[Kn
+:[K[K [KESCESC[KOO[KBB[Kkdevelop-php-l10n - localization files for KDevelop PHP plugin
+:[K[K [KESCESC[KOO[KBB[Klibcode-tidyall-perl - your all-in-one code tidier and validator
+:[K[K [KESCESC[KOO[KBB[Klibphp-adodb - ADOdb is a PHP database abstraction layer library
+:[K[K [KESCESC[KOO[KBB[Klibphp-embed - HTML-embedded scripting language (Embedded SAPI library) (default :[K[K [KESCESC[KOO[KBB[K)
+:[K[K [KESCESC[KOO[KBB[Klibphp-jabber - Object-oriented PHP interface for the Jabber/XMPP protocol
+:[K[K [KESCESC[KOO[KBB[Klibphp-magpierss - provides an XML-based RSS parser in PHP
+:[K[K [KESCESC[KOO[KBB[Klibphp-pclzip - transitional dummy package
+:[K[K [KESCESC[KOO[KBB[Klibphp-phpmailer - full featured email transfer class for PHP
+:[K[K [KESCESC[KOO[KBB[Klibphp-predis - Flexible and feature-complete PHP client library for the Redis k :[K[K [KESCESC[KOO[KBB[Key-value store
+:[K[K [KESCESC[KOO[KBB[Klibphp-serialization-perl - Perl module to manipulate serialized PHP data struct :[K[K [KESCESC[KOO[KBB[Kures
+:[K[K [KESCESC[KOO[KBB[Klibphp-simplepie - RSS and Atom feed parsing in PHP
+:[K[K [KESCESC[KOO[KBB[Klibphp-snoopy - Snoopy is a PHP class that simulates a web browser
+:[K[K [KESCESC[KOO[KBB[Klibphp-swiftmailer - transitional dummy package
+:[K[K [KESCESC[KOO[KBB[Klibphp7.0-embed - HTML-embedded scripting language (Embedded SAPI library)
+:[K[K [KESCESC[KOO[KBB[Kmlmmj-php-web - web interface for mlmmj, written in php
+:[K[K [KESCESC[KOO[KBB[Kmlmmj-php-web-admin - administrative web interface for mlmmj, written in php
+:[K[K [KESCESC[KOO[KBB[Kpdepend - design quality metrics for PHP packages
+:[K[K [KESCESC[KOO[KBB[Kphp-amqp - AMQP extension for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-amqplib - pure PHP implementation of the AMQP protocol
+:[K[K [KESCESC[KOO[KBB[Kphp-analog - PHP micro logging package
+:[K[K [KESCESC[KOO[KBB[Kphp-apcu - APC User Cache for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-apigen - PHP source code API generator
+:[K[K [KESCESC[KOO[KBB[Kphp-apigen-theme-bootstrap - Twitter Bootstrap theme for ApiGen
+:[K[K [KESCESC[KOO[KBB[Kphp-apigen-theme-default - Default theme for ApiGen
+:[K[K [KESCESC[KOO[KBB[Kphp-assetic - Asset Management for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-ast - AST extension for PHP 7
+:[K[K [KESCESC[KOO[KBB[Kphp-auth - Creating an authentication system
+:[K[K [KESCESC[KOO[KBB[Kphp-auth-http - HTTP authentication
+:[K[K [KESCESC[KOO[KBB[Kphp-auth-sasl - Abstraction of various SASL mechanism responses
+:[K[K [KESCESC[KOO[KBB[Kphp-aws-sdk - software development kit to build solutions for Amazon
+:[K[K [KESCESC[KOO[KBB[Kphp-bcmath - Bcmath module for PHP [default]
+:[K[K [KESCESC[KOO[KBB[Kphp-bz2 - bzip2 module for PHP [default]
+:[K[K [KESCESC[KOO[KBB[Kphp-cache - framework for caching of arbitrary data
+:[K[K [KESCESC[KOO[KBB[Kphp-cache-lite - Fast and Safe little cache system
+:[K[K [KESCESC[KOO[KBB[Kphp-cas - Central Authentication Service client library in php
+:[K[K [KESCESC[KOO[KBB[Kphp-cli-prompt - tiny helper prompting for user input
+:[K[K [KESCESC[KOO[KBB[Kphp-codecoverage - collection, processing, and rendering for code coverage
+:[K[K [KESCESC[KOO[KBB[Kphp-codesniffer - PHP, CSS and JavaScript coding standard analyzer and checker
+:[K[K [KESCESC[KOO[KBB[Kphp-compat - Provides components to achieve PHP version independence
+:[K[K [KESCESC[KOO[KBB[Kphp-composer-semver - Semver library that offers utilities, version constraint p :[K[K [KESCESC[KOO[KBB[Karsing and
+:[K[K [KESCESC[KOO[KBB[Kphp-composer-spdx-licenses - SPDX licenses list and validation library
+:[K[K [KESCESC[KOO[KBB[Kphp-console-commandline - A full featured command line options and arguments par :[K[K [KESCESC[KOO[KBB[Kser
+:[K[K [KESCESC[KOO[KBB[Kphp-console-table - Library that makes it easy to build console style tables
+:[K[K [KESCESC[KOO[KBB[Kphp-crypt-blowfish - Allows for quick two-way blowfish encryption without requir :[K[K [KESCESC[KOO[KBB[King the MCrypt PHP extension
+:[K[K [KESCESC[KOO[KBB[Kphp-crypt-cbc - PEAR class to emulate Perl's Crypt::CBC module
+:[K[K [KESCESC[KOO[KBB[Kphp-crypt-chap - Generating CHAP packets
+:[K[K [KESCESC[KOO[KBB[Kphp-crypt-gpg - PHP PEAR module for encrypting and decrypting with GnuPG
+:[K[K [KESCESC[KOO[KBB[Kphp-cssmin - CSS minification class
+:[K[K [KESCESC[KOO[KBB[Kphp-date - Generic date/time handling class for PEAR
+:[K[K [KESCESC[KOO[KBB[Kphp-db - PHP PEAR Database Abstraction Layer
+:[K[K [KESCESC[KOO[KBB[Kphp-deepcopy - create deep copies (clones) of objects
+:[K[K [KESCESC[KOO[KBB[Kphp-directory-scanner - recursive directory scanner and filter
+:[K[K [KESCESC[KOO[KBB[Kphp-doc - Documentation for PHP5
+:[K[K [KESCESC[KOO[KBB[Kphp-doctrine-annotations - Docblock Annotations Parser - Doctrine component
+:[K[K [KESCESC[KOO[KBB[Kphp-doctrine-bundle - bundle library - Doctrine component
+:[K[K [KESCESC[KOO[KBB[Kphp-doctrine-cache - cache library - Doctrine component
+:[K[K [KESCESC[KOO[KBB[Kphp-doctrine-cache-bundle - cache bundle library - Doctrine component
+:[K[K [KESCESC[KOO[KBB[Kphp-doctrine-collections - Collections Abstraction library - Doctrine component
+:[K[K [KESCESC[KOO[KBB[Kphp-doctrine-common - common extensions for Doctrine
+:[K[K [KESCESC[KOO[KBB[Kphp-doctrine-data-fixtures - Data Fixtures for all Doctrine Object Managers
+:[K[K [KESCESC[KOO[KBB[Kphp-doctrine-dbal - database abstraction layer for Doctrine
+:[K[K [KESCESC[KOO[KBB[Kphp-doctrine-inflector - string manipulations library - Doctrine component
+:[K[K [KESCESC[KOO[KBB[Kphp-doctrine-instantiator - lightweight utility to instantiate objects in PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-doctrine-lexer - base lexer library - Doctrine component
+:[K[K [KESCESC[KOO[KBB[Kphp-doctrine-orm - tool for object-relational mapping
+:[K[K [KESCESC[KOO[KBB[Kphp-dompdf - HTML to PDF converter
+:[K[K [KESCESC[KOO[KBB[Kphp-dropbox - Dropbox API library
+:[K[K [KESCESC[KOO[KBB[Kphp-elisp - Emacs support for php files
+:[K[K [KESCESC[KOO[KBB[Kphp-email-validator - A library for validating emails
+:[K[K [KESCESC[KOO[KBB[Kphp-enchant - Enchant module for PHP [default]
+:[K[K [KESCESC[KOO[KBB[Kphp-fdomdocument - extension to PHP's standard DOM
+:[K[K [KESCESC[KOO[KBB[Kphp-file-iterator - FilterIterator implementation for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-finder-facade - convenience wrapper for Symfony's Finder component
+:[K[K [KESCESC[KOO[KBB[Kphp-finder-facade-doc - convenience wrapper for Symfony's Finder component - doc :[K[K [KESCESC[KOO[KBB[Kumentation
+:[K[K [KESCESC[KOO[KBB[Kphp-font-lib - read, parse, export and make subsets of different fonts
+:[K[K [KESCESC[KOO[KBB[Kphp-fpdf - PHP class to generate PDF files
+:[K[K [KESCESC[KOO[KBB[Kphp-fpm - server-side, HTML-embedded scripting language (FPM-CGI binary) (defaul :[K[K [KESCESC[KOO[KBB[Kt)
+:[K[K [KESCESC[KOO[KBB[Kphp-fshl - Fast Syntax HighLighter
+:[K[K [KESCESC[KOO[KBB[Kphp-fxsl - XSL wrapper and extension to XSLTProcessor
+:[K[K [KESCESC[KOO[KBB[Kphp-geoip - GeoIP module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-geshi - Generic Syntax Highlighter
+:[K[K [KESCESC[KOO[KBB[Kphp-getid3 - scripts to extract information from multimedia files
+:[K[K [KESCESC[KOO[KBB[Kphp-gettext - read gettext MO files directly, without requiring anything other t :[K[K [KESCESC[KOO[KBB[Khan PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-gnupg - wrapper around the gpgme library
+:[K[K [KESCESC[KOO[KBB[Kphp-google-api-php-client - Google APIs client library for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-google-auth - Google Auth Library for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-guzzle-stream - implementation of the proposed PSR-7 stream interface
+:[K[K [KESCESC[KOO[KBB[Kphp-guzzlehttp - object-oriented PHP HTTP client
+:[K[K [KESCESC[KOO[KBB[Kphp-guzzlehttp-promises - Guzzle promises library
+:[K[K [KESCESC[KOO[KBB[Kphp-guzzlehttp-psr7 - PSR-7 message implementation
+:[K[K [KESCESC[KOO[KBB[Kphp-guzzlehttp-ringphp - Ring adapter and handler system for Guzzle
+:[K[K [KESCESC[KOO[KBB[Kphp-guzzlehttp-ringphp-doc - Ring adapter and handler system for Guzzle - docume :[K[K [KESCESC[KOO[KBB[Kntation
+:[K[K [KESCESC[KOO[KBB[Kphp-hamcrest - This is the PHP port of Hamcrest Matchers
+:[K[K [KESCESC[KOO[KBB[Kphp-horde - Horde Application Framework
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-activesync - Horde ActiveSync Server Library
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-alarm - Horde Alarm Libraries
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-ansel - Photo management application
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-argv - Horde command-line argument parsing package
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-auth - Horde Authentication API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-autoloader - Horde Autoloader
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-browser - Horde Browser API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-cache - Horde Caching API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-cli - Horde Command Line Interface API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-compress - Horde Compression API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-compress-fast - Fast Compression Library
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-constraint - Horde Constraint library
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-content - Tagging application
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-controller - Horde Controller libraries
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-core - Horde Core Framework libraries
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-crypt - Horde Cryptography API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-crypt-blowfish - Blowfish Encryption Library
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-css-parser - Horde CSS Parser
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-cssminify - CSS Minification
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-data - Horde Data API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-date - Horde Date package
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-date-parser - Horde Date Parser
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-dav - Horde library for WebDAV, CalDAV, CardDAV
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-db - Horde Database Libraries
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-editor - Horde Editor API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-elasticsearch - Horde ElasticSearch client
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-exception - Horde Exception Handler
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-feed - Horde Feed libraries
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-form - Horde Form API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-gollem - Web-based file manager
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-group - Horde User Groups System
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-groupware - Horde Groupware
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-hashtable - Horde Hash Table Interface
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-history - API for tracking the history of an object
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-http - Horde HTTP libraries
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-icalendar - iCalendar API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-idna - IDNA backend normalization package
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-image - Horde Image API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-imap-client - Horde IMAP Client
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-imp - A web based webmail system
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-imsp - IMSP API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-ingo - An email filter rules manager
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-injector - Horde dependency injection container
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-itip - iTip invitation response handling
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-javascriptminify - Javascript Minification
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-kolab-format - A package for reading/writing Kolab data formats
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-kolab-server - A package for manipulating the Kolab user database
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-kolab-session - A package managing an active Kolab session
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-kolab-storage - A package for handling Kolab data stored on an IMAP se :[K[K [KESCESC[KOO[KBB[Krver
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-kronolith - A web based calendar
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-ldap - Horde LDAP libraries
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-listheaders - Horde List Headers Parsing Library
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-lock - Horde Resource Locking System
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-log - Horde Logging library
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-logintasks - Horde Login Tasks System
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-lz4 - Horde LZ4 Compression Extension
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-mail - Horde Mail Library
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-mail-autoconfig - Horde Mail Autoconfiguration
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-mapi - MAPI utility library
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-memcache - Horde Memcache API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-mime - Horde MIME Library
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-mime-viewer - Horde MIME Viewer Library
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-mnemo - A web based notes manager
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-nag - A web based task list manager
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-nls - Native Language Support (NLS)
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-notification - Horde Notification System
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-oauth - Horde OAuth client/server
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-openxchange - Open-Xchange Connector
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-pack - Horde Pack Utility
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-passwd - Horde password changing application
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-pdf - Horde PDF library
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-perms - Horde Permissions System
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-prefs - Horde Preferences API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-queue - Horde Queue
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-rdo - Rampage Data Objects
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-role - PEAR installer role used to install Horde components
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-routes - Horde Routes URL mapping system
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-rpc - Horde RPC API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-scheduler - Horde Scheduler System
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-scribe - Scribe
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-secret - Secret Encryption API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-serialize - Data Encapulation API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-service-facebook - Horde Facebook client
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-service-gravatar - API accessor for gravatar.com
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-service-twitter - Horde Twitter client
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-service-urlshortener - Horde_Service_UrlShortener Class
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-service-weather - Horde Weather Provider
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-sesha - A simple Inventory App for Horde
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-sessionhandler - Horde Session Handler API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-share - Horde Shared Permissions System
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-smtp - Horde SMTP Client
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-socket-client - Horde Socket Client
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-spellchecker - Spellcheck API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-stream - Horde stream handler
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-stream-filter - Horde Stream filters
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-stream-wrapper - Horde Stream wrappers
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-support - Horde support package
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-syncml - Horde_SyncMl provides an API for processing SyncML requests
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-template - Horde Template System
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-test - Horde testing base classes
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-text-diff - Engine for performing and rendering text diffs
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-text-filter - Horde Text Filter API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-text-flowed - Horde API for flowed text as per RFC 3676
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-thrift - Thrift
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-timeobjects - Horde timeobjects application
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-timezone - Timezone library
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-token - Horde Token API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-translation - Horde translation library
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-trean - Web-based bookmarks application
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-tree - Horde Tree API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-turba - A web based address book
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-url - Horde Url class
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-util - Horde Utility Libraries
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-vfs - Virtual File System API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-view - Horde View API
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-webmail - Horde Groupware Webmail Edition
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-whups - Ticket-tracking application
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-wicked - Wiki application
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-xml-element - Horde Xml Element object
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-xml-wbxml - Horde_Xml_Wbxml provides an API for encoding and decoding  :[K[K [KESCESC[KOO[KBB[KWBXML documents used in SyncML and other wireless applications
+:[K[K [KESCESC[KOO[KBB[Kphp-html-safe - strip down all potentially dangerous content within HTML
+:[K[K [KESCESC[KOO[KBB[Kphp-htmlawed - htmLawed PHP code to purify & filter HTML
+:[K[K [KESCESC[KOO[KBB[Kphp-htmlpurifier - Standards-compliant HTML filter
+:[K[K [KESCESC[KOO[KBB[Kphp-http - PHP PEAR module for HTTP related stuff
+:[K[K [KESCESC[KOO[KBB[Kphp-http-request - PEAR class to provide an easy way to perform HTTP requests
+:[K[K [KESCESC[KOO[KBB[Kphp-http-request2 - Provides an easy way to perform HTTP requests
+:[K[K [KESCESC[KOO[KBB[Kphp-http-webdav-server - WebDAV Server Baseclass
+:[K[K [KESCESC[KOO[KBB[Kphp-icinga - PHP library to communicate with and use Icinga
+:[K[K [KESCESC[KOO[KBB[Kphp-igbinary - igbinary PHP serializer
+:[K[K [KESCESC[KOO[KBB[Kphp-image-text - Image_Text - Advanced text maipulations in images
+:[K[K [KESCESC[KOO[KBB[Kphp-imagick - Provides a wrapper to the ImageMagick library
+:[K[K [KESCESC[KOO[KBB[Kphp-imap - IMAP module for PHP [default]
+:[K[K [KESCESC[KOO[KBB[Kphp-interbase - Interbase module for PHP [default]
+:[K[K [KESCESC[KOO[KBB[Kphp-intl - Internationalisation module for PHP [default]
+:[K[K [KESCESC[KOO[KBB[Kphp-invoker - Utility class for invoking callables with a timeout
+:[K[K [KESCESC[KOO[KBB[Kphp-irods-prods - PHP client API for iRODS
+:[K[K [KESCESC[KOO[KBB[Kphp-jmespath - Declaratively specify how to extract elements from a JSON documen :[K[K [KESCESC[KOO[KBB[Kt
+:[K[K [KESCESC[KOO[KBB[Kphp-json - JSON module for PHP [default]
+:[K[K [KESCESC[KOO[KBB[Kphp-json-patch - Produce and apply json-patch objects
+:[K[K [KESCESC[KOO[KBB[Kphp-json-schema - implementation of JSON schema
+:[K[K [KESCESC[KOO[KBB[Kphp-jwt - encode and decode JSON Web Tokens (JWT)
+:[K[K [KESCESC[KOO[KBB[Kphp-kdyby-events - Events for Nette Framework
+:[K[K [KESCESC[KOO[KBB[Kphp-kit-pathjoin - Cross-platform library for normalizing and joining file syste :[K[K [KESCESC[KOO[KBB[Km paths
+:[K[K [KESCESC[KOO[KBB[Kphp-league-flysystem - filesystem abstraction offering one API to many filesyste :[K[K [KESCESC[KOO[KBB[Kms
+:[K[K [KESCESC[KOO[KBB[Kphp-letodms-core - Document management system - Core files
+:[K[K [KESCESC[KOO[KBB[Kphp-letodms-lucene - Document management system - Fulltext search
+:[K[K [KESCESC[KOO[KBB[Kphp-libvirt-php - libvirt bindings for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-log - Logging Framework
+:[K[K [KESCESC[KOO[KBB[Kphp-mail - Class that provides multiple interfaces for sending emails
+:[K[K [KESCESC[KOO[KBB[Kphp-mail-mbox - Read and modify Unix MBOXes
+:[K[K [KESCESC[KOO[KBB[Kphp-mail-mime - PHP PEAR module for creating MIME messages
+:[K[K [KESCESC[KOO[KBB[Kphp-mail-mimedecode - Provides a class to decode mime messages
+:[K[K [KESCESC[KOO[KBB[Kphp-markdown - PHP library for rendering Markdown data
+:[K[K [KESCESC[KOO[KBB[Kphp-mbstring - MBSTRING module for PHP [default]
+:[K[K [KESCESC[KOO[KBB[Kphp-mcrypt - libmcrypt module for PHP [default]
+:[K[K [KESCESC[KOO[KBB[Kphp-mdb2 - merge of the PEAR DB and Metabase php database abstraction layers
+:[K[K [KESCESC[KOO[KBB[Kphp-mdb2-driver-mysql - PHP PEAR module to provide a MySQL driver for MDB2
+:[K[K [KESCESC[KOO[KBB[Kphp-mdb2-driver-pgsql - PHP PEAR module to provide a PostgreSQL driver for MDB2
+:[K[K [KESCESC[KOO[KBB[Kphp-memcache - memcache extension module for PHP5
+:[K[K [KESCESC[KOO[KBB[Kphp-memcached - memcached extension module for PHP5, uses libmemcached
+:[K[K [KESCESC[KOO[KBB[Kphp-mf2 - Microformats2 is the simplest way to markup structured information in  :[K[K [KESCESC[KOO[KBB[KHTML
+:[K[K [KESCESC[KOO[KBB[Kphp-mime-type - Utility class for dealing with MIME types
+:[K[K [KESCESC[KOO[KBB[Kphp-mockery - mock object framework for PHPUnit and other testing framework
+:[K[K [KESCESC[KOO[KBB[Kphp-mockery-doc - mock object framework for PHPUnit - documentation
+:[K[K [KESCESC[KOO[KBB[Kphp-mongodb - MongoDB driver for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-monolog - send logs to various destination and web services
+:[K[K [KESCESC[KOO[KBB[Kphp-msgpack - PHP extension for interfacing with MessagePack
+:[K[K [KESCESC[KOO[KBB[Kphp-net-dime - class that implements DIME encoding
+:[K[K [KESCESC[KOO[KBB[Kphp-net-dns2 - PHP5 Resolver library used to communicate with a DNS server
+:[K[K [KESCESC[KOO[KBB[Kphp-net-ftp - provides an OO interface to the PHP FTP functions
+:[K[K [KESCESC[KOO[KBB[Kphp-net-imap - Provides an implementation of the IMAP protocol
+:[K[K [KESCESC[KOO[KBB[Kphp-net-ipv4 - IPv4 network calculations and validation
+:[K[K [KESCESC[KOO[KBB[Kphp-net-ipv6 - Check and validate IPv6 addresses
+:[K[K [KESCESC[KOO[KBB[Kphp-net-ldap - OO interface for searching and manipulating LDAP-entries
+:[K[K [KESCESC[KOO[KBB[Kphp-net-ldap2 - Object oriented interface for searching and manipulating LDAP-en :[K[K [KESCESC[KOO[KBB[Ktries
+:[K[K [KESCESC[KOO[KBB[Kphp-net-ldap3 - Object oriented interface for searching and manipulating LDAP en :[K[K [KESCESC[KOO[KBB[Ktries
+:[K[K [KESCESC[KOO[KBB[Kphp-net-nntp - PHP Pear module for NNTP
+:[K[K [KESCESC[KOO[KBB[Kphp-net-publicsuffix - PHP module for detecting registered domains and public su :[K[K [KESCESC[KOO[KBB[Kffixes
+:[K[K [KESCESC[KOO[KBB[Kphp-net-sieve - Handles talking to a sieve server
+:[K[K [KESCESC[KOO[KBB[Kphp-net-smartirc - provides an OO interface to the PHP IRC functions
+:[K[K [KESCESC[KOO[KBB[Kphp-net-smtp - PHP PEAR module implementing SMTP protocol
+:[K[K [KESCESC[KOO[KBB[Kphp-net-socket - PHP PEAR Network Socket Interface module
+:[K[K [KESCESC[KOO[KBB[Kphp-net-url - easy parsing of Urls
+:[K[K [KESCESC[KOO[KBB[Kphp-net-url2 - Class for parsing and handling URL
+:[K[K [KESCESC[KOO[KBB[Kphp-net-whois - PHP PEAR module for querying whois services
+:[K[K [KESCESC[KOO[KBB[Kphp-nette - Nette Framework
+:[K[K [KESCESC[KOO[KBB[Kphp-nrk-predis - Flexible and feature-complete PHP client library for the Redis  :[K[K [KESCESC[KOO[KBB[Kkey-value store
+:[K[K [KESCESC[KOO[KBB[Kphp-numbers-words - PEAR module providing methods for spelling numerals in words
+:[K[K [KESCESC[KOO[KBB[Kphp-oauth - OAuth 1.0 consumer and provider extension
+:[K[K [KESCESC[KOO[KBB[Kphp-openid - PHP OpenID library
+:[K[K [KESCESC[KOO[KBB[Kphp-pager - Pages an array of data, creating links to previous and next pages
+:[K[K [KESCESC[KOO[KBB[Kphp-parser - convert PHP code into abstract syntax tree
+:[K[K [KESCESC[KOO[KBB[Kphp-patchwork-utf8 - UTF-8 strings handling for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-pclzip - ZIP archive manager class for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-pdfparser - PHP library to parse PDF files and extract elements like text
+:[K[K [KESCESC[KOO[KBB[Kphp-pecl-http - pecl_http module for PHP 5 Extended HTTP Support
+:[K[K [KESCESC[KOO[KBB[Kphp-pecl-http-dev - pecl_http module for PHP 5 Extended HTTP Support development :[K[K [KESCESC[KOO[KBB[K headers
+:[K[K [KESCESC[KOO[KBB[Kphp-phpdbg - server-side, HTML-embedded scripting language (PHPDBG binary) (defa :[K[K [KESCESC[KOO[KBB[Kult)
+:[K[K [KESCESC[KOO[KBB[Kphp-phpdocumentor-reflection - Reflection library to do Static Analysis for PHP  :[K[K [KESCESC[KOO[KBB[KProjects
+:[K[K [KESCESC[KOO[KBB[Kphp-phpdocumentor-reflection-common - Common reflection classes - phpDocumentor  :[K[K [KESCESC[KOO[KBB[Kcomponent
+:[K[K [KESCESC[KOO[KBB[Kphp-phpdocumentor-reflection-docblock - DocBlock parser - phpDocumentor componen :[K[K [KESCESC[KOO[KBB[Kt
+:[K[K [KESCESC[KOO[KBB[Kphp-phpdocumentor-type-resolver - TypeResolver and FqsenResolver - phpDocumentor :[K[K [KESCESC[KOO[KBB[K component
+:[K[K [KESCESC[KOO[KBB[Kphp-phpseclib - implementations of an arbitrary-precision integer arithmetic lib :[K[K [KESCESC[KOO[KBB[Krary
+:[K[K [KESCESC[KOO[KBB[Kphp-phpspec-prophecy - object mocking framework - phpspec component
+:[K[K [KESCESC[KOO[KBB[Kphp-picofeed - Modern library to handle RSS/Atom feeds
+:[K[K [KESCESC[KOO[KBB[Kphp-pimple - simple dependency injection container
+:[K[K [KESCESC[KOO[KBB[Kphp-propro - propro module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-propro-dev - propro module for PHP development headers
+:[K[K [KESCESC[KOO[KBB[Kphp-proxy-manager - library providing utilities to operate with Object Proxies
+:[K[K [KESCESC[KOO[KBB[Kphp-psr-cache - Common interface for caching libraries
+:[K[K [KESCESC[KOO[KBB[Kphp-psr-http-message - Common interface for HTTP messages
+:[K[K [KESCESC[KOO[KBB[Kphp-psr-log - common interface for logging libraries
+:[K[K [KESCESC[KOO[KBB[Kphp-punic - PHP-Unicode CLDR toolkit
+:[K[K [KESCESC[KOO[KBB[Kphp-radius - Radius client library
+:[K[K [KESCESC[KOO[KBB[Kphp-random-compat - PHP 5.x polyfill for random_bytes() and random_int() from PH :[K[K [KESCESC[KOO[KBB[KP 7
+:[K[K [KESCESC[KOO[KBB[Kphp-raphf - raphf module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-raphf-dev - raphf module for PHP development headers
+:[K[K [KESCESC[KOO[KBB[Kphp-react-promise - lightweight implementation of CommonJS Promises/A for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-readline - readline module for PHP [default]
+:[K[K [KESCESC[KOO[KBB[Kphp-redis - PHP extension for interfacing with Redis
+:[K[K [KESCESC[KOO[KBB[Kphp-rrd - PHP bindings to rrd tool system
+:[K[K [KESCESC[KOO[KBB[Kphp-sabre-dav - WebDAV Framework for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-sabre-dav-2.1 - WebDAV Framework for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-sabre-event - lightweight library for event-based development
+:[K[K [KESCESC[KOO[KBB[Kphp-sabre-http - library to ease the work with HTTP protocol
+:[K[K [KESCESC[KOO[KBB[Kphp-sabre-http-3 - library to ease the work with HTTP protocol
+:[K[K [KESCESC[KOO[KBB[Kphp-sabre-uri - several functions for working with URIs
+:[K[K [KESCESC[KOO[KBB[Kphp-sabre-vobject - library to parse and manipulate iCalendar and vCard objects
+:[K[K [KESCESC[KOO[KBB[Kphp-sabre-vobject-3 - library to parse and manipulate iCalendar and vCard object :[K[K [KESCESC[KOO[KBB[Ks
+:[K[K [KESCESC[KOO[KBB[Kphp-sabre-xml - specialized XML reader and writer
+:[K[K [KESCESC[KOO[KBB[Kphp-seclib - implementations of an arbitrary-precision integer arithmetic librar :[K[K [KESCESC[KOO[KBB[Ky
+:[K[K [KESCESC[KOO[KBB[Kphp-securitylib - base set of security libraries
+:[K[K [KESCESC[KOO[KBB[Kphp-sepa-direct-debit - Create Sepa Direct Debit XML Files in PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-services-json - PHP implementaion of json_encode/decode
+:[K[K [KESCESC[KOO[KBB[Kphp-services-weather - This class acts as an interface to various online weather :[K[K [KESCESC[KOO[KBB[K-services
+:[K[K [KESCESC[KOO[KBB[Kphp-smb - php wrapper for smbclient and libsmbclient-php
+:[K[K [KESCESC[KOO[KBB[Kphp-smbclient - PHP wrapper for libsmbclient
+:[K[K [KESCESC[KOO[KBB[Kphp-soap - SOAP module for PHP [default]
+:[K[K [KESCESC[KOO[KBB[Kphp-solr - PHP extension for communicating with Apache Solr server
+:[K[K [KESCESC[KOO[KBB[Kphp-sql-formatter - a PHP SQL highlighting library
+:[K[K [KESCESC[KOO[KBB[Kphp-ssh2 - Bindings for the libssh2 library
+:[K[K [KESCESC[KOO[KBB[Kphp-stomp - Streaming Text Oriented Messaging Protocol (STOMP) client module for :[K[K [KESCESC[KOO[KBB[K PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-streams - A set of generic stream wrappers
+:[K[K [KESCESC[KOO[KBB[Kphp-superclosure - Serialize Closure objects, including their context and bindin :[K[K [KESCESC[KOO[KBB[Kg
+:[K[K [KESCESC[KOO[KBB[Kphp-swiftmailer - Swiftmailer, free feature-rich PHP mailer
+:[K[K [KESCESC[KOO[KBB[Kphp-sybase - Sybase module for PHP [default]
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-asset - manage asset URLs
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-browser-kit - simulate the behavior of a web browser
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-class-loader - load PHP classes automatically
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-config - load configurations from different data sources
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-console - run tasks from the command line
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-css-selector - convert CSS selectors to XPath expressions
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-debug - tools to make debugging of PHP code easier
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-debug-bundle - debugging tools for the Symfony framework
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-dependency-injection - standardize and centralize construction of ob :[K[K [KESCESC[KOO[KBB[Kjects
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-doctrine-bridge - integration for Doctrine with Symfony Components
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-dom-crawler - ease DOM navigation for HTML and XML documents
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-event-dispatcher - dispatch events and listen to them
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-expression-language - compile and evaluate expressions
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-filesystem - basic filesystem utilities
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-finder - find files and directories
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-form - create HTML forms and process request data
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-framework-bundle - basic, robust and flexible MVC framework
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-http-foundation - object-oriented layer for the HTTP specification
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-http-kernel - building blocks for flexible and fast HTTP-based frame :[K[K [KESCESC[KOO[KBB[Kworks
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-intl - limited replacement layer for the PHP extension intl
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-locale - deprecated replacement layer for the PHP extension intl
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-monolog-bridge - integration for Monolog with Symfony Components
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-options-resolver - configure objects with option arrays
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-phpunit-bridge - integration for PHPUnit with Symfony Components
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-process - execute commands in sub-processes
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-property-access - read from and write to an object or array
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-proxy-manager-bridge - integration for ProxyManager with Symfony Com :[K[K [KESCESC[KOO[KBB[Kponents
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-routing - associate a request with code that generates a response
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-security - infrastructure for sophisticated authorization systems
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-security-bundle - configurable security system for the Symfony frame :[K[K [KESCESC[KOO[KBB[Kwork
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-serializer - convert PHP objects into specific formats and vice vers :[K[K [KESCESC[KOO[KBB[Ka
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-stopwatch - profile PHP code
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-swiftmailer-bridge - integration for Swift Mailer with Symfony Compo :[K[K [KESCESC[KOO[KBB[Knents
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-templating - tools needed to build a template system
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-translation - tools to internationalize an application
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-twig-bridge - integration for Twig with Symfony Components
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-twig-bundle - configurable integration of Twig with the Symfony fram :[K[K [KESCESC[KOO[KBB[Kework
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-validator - tools to validate classes
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-var-dumper - Symfony mechanism for exploring and dumping PHP variabl :[K[K [KESCESC[KOO[KBB[Kes
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-web-profiler-bundle - collect requests information for analysis and  :[K[K [KESCESC[KOO[KBB[Kdebugging
+:[K[K [KESCESC[KOO[KBB[Kphp-symfony-yaml - convert YAML to PHP arrays and the other way around
+:[K[K [KESCESC[KOO[KBB[Kphp-tcpdf - PHP class for generating PDF files on-the-fly
+:[K[K [KESCESC[KOO[KBB[Kphp-text-captcha - Generation of CAPTCHAs
+:[K[K [KESCESC[KOO[KBB[Kphp-text-figlet - PEAR module for rendering text using FIGlet fonts
+:[K[K [KESCESC[KOO[KBB[Kphp-text-languagedetect - Language detection class
+:[K[K [KESCESC[KOO[KBB[Kphp-text-password - Creating passwords with PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-text-template - Simple template engine
+:[K[K [KESCESC[KOO[KBB[Kphp-text-wiki - transform Wiki and BBCode markup into XHTML, LaTeX or plain text :[K[K [KESCESC[KOO[KBB[K markup
+:[K[K [KESCESC[KOO[KBB[Kphp-timer - Utility class for timing
+:[K[K [KESCESC[KOO[KBB[Kphp-token-stream - Wrapper around PHP's tokenizer extension
+:[K[K [KESCESC[KOO[KBB[Kphp-tokenreflection - PHP reflection replacement
+:[K[K [KESCESC[KOO[KBB[Kphp-twig - Flexible, fast, and secure template engine for php
+:[K[K [KESCESC[KOO[KBB[Kphp-twig-doc - Twig template engine documentation
+:[K[K [KESCESC[KOO[KBB[Kphp-uuid - PHP UUID extension
+:[K[K [KESCESC[KOO[KBB[Kphp-validate - validation class
+:[K[K [KESCESC[KOO[KBB[Kphp-webmozart-assert - Assertions to validate method input/output with nice erro :[K[K [KESCESC[KOO[KBB[Kr messages
+:[K[K [KESCESC[KOO[KBB[Kphp-wikidiff2 - external diff engine for mediawiki
+:[K[K [KESCESC[KOO[KBB[Kphp-xajax - A library to develop Ajax applications
+:[K[K [KESCESC[KOO[KBB[Kphp-xdebug - Xdebug Module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-xml - DOM, SimpleXML, WDDX, XML, and XSL module for PHP [default]
+:[K[K [KESCESC[KOO[KBB[Kphp-xml-htmlsax3 - SAX parser for HTML and other badly formed XML documents
+:[K[K [KESCESC[KOO[KBB[Kphp-xml-parser - XML parsing class based on PHP's bundled expat
+:[K[K [KESCESC[KOO[KBB[Kphp-xml-rpc2 - PHP XML-RPC client/server library
+:[K[K [KESCESC[KOO[KBB[Kphp-xml-serializer - swiss-army knife for reading and writing XML files
+:[K[K [KESCESC[KOO[KBB[Kphp-xml-svg - XML_SVG API
+:[K[K [KESCESC[KOO[KBB[Kphp-yac - YAC (Yet Another Cache) for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp-zend-code - Zend Framework - Code component
+:[K[K [KESCESC[KOO[KBB[Kphp-zend-db - Zend Framework - Db component
+:[K[K [KESCESC[KOO[KBB[Kphp-zend-eventmanager - Zend Framework - EventManager component
+:[K[K [KESCESC[KOO[KBB[Kphp-zend-hydrator - Zend Framework - Hydrator component
+:[K[K [KESCESC[KOO[KBB[Kphp-zend-search - Zend Framework - ZendSearch component
+:[K[K [KESCESC[KOO[KBB[Kphp-zend-stdlib - Zend Framework - Stdlib component
+:[K[K [KESCESC[KOO[KBB[Kphp-zend-xml - Zend Framework - Xml component
+:[K[K [KESCESC[KOO[KBB[Kphp-zeta-base - Zeta Components - Base package
+:[K[K [KESCESC[KOO[KBB[Kphp-zeta-console-tools - Zeta Components - ConsoleTools package
+:[K[K [KESCESC[KOO[KBB[Kphp-zeta-unit-test - Zeta Components - UnitTest package
+:[K[K [KESCESC[KOO[KBB[Kphp-zip - Zip module for PHP [default]
+:[K[K [KESCESC[KOO[KBB[Kphp-zipstreamer - Stream zip files without i/o overhead
+:[K[K [KESCESC[KOO[KBB[Kphp-zmq - ZeroMQ messaging bindings for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-bcmath - Bcmath module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-bz2 - bzip2 module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-enchant - Enchant module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-fpm - server-side, HTML-embedded scripting language (FPM-CGI binary)
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-imap - IMAP module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-interbase - Interbase module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-intl - Internationalisation module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-mbstring - MBSTRING module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-mcrypt - libmcrypt module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-phpdbg - server-side, HTML-embedded scripting language (PHPDBG binary)
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-soap - SOAP module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-sybase - Sybase module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-zip - Zip module for PHP
+:[K[K [KESCESC[KOO[KBB[Kphpab - lightweight PHP namespace aware autoload generator
+:[K[K [KESCESC[KOO[KBB[Kphpcpd - copy and paste detector (CPD) for PHP code
+:[K[K [KESCESC[KOO[KBB[Kphploc - tool for quickly measuring the size of a PHP project
+:[K[K [KESCESC[KOO[KBB[Kphpmd - PHP Mess Detector
+:[K[K [KESCESC[KOO[KBB[Kphpunit-resource-operations - provide a list of PHP built-in functions that oper :[K[K [KESCESC[KOO[KBB[Kate on resources
+:[K[K [KESCESC[KOO[KBB[Ksbnc-php-dev - IRC proxy for multiple users (PHP classes)
+:[K[K [KESCESC[KOO[KBB[Ktweeper - web scraper to convert supported websites (e.g. Twitter.com) to RSS
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-javascriptminify-jsmin - Horde Javascript Minifier - Jsmin PHP Driver
+:[K[K [KESCESC[KOO[KBB[Kphp-horde-text-filter-jsmin - Horde Text Filter - Jsmin PHP Driver
+:[K[K [KESCESC[KOO[KBB[Kphp-mythtv - PHP Bindings for MythTV
+:[K[K [KESCESC[KOO[KBB[Kphp7.0-dba - DBA module for PHP
+:[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K[?1l>[?1049l]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ cp web [K.php vare[K/www/html
+cp: cannot create regular file 'var/www/html': No such file or directory
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ cp web.php var/www/html[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K/web,\[K[K[K[K[K[Kweb.php var/www/html
+cp: cannot create regular file 'var/www/html': No such file or directory
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ cp web.php /var/www/html/[K
+cp: cannot create regular file '/var/www/html/web.php': Permission denied
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ cp web.php /var/www/html/
+cp: cannot create regular file '/var/www/html/web.php': Permission denied
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ cp web.php /var/www/html/web.php
+cp: cannot create regular file '/var/www/html/web.php': Permission denied
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo nano /var/www/html/info.php
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[22;35H(B[0;7m[ New File ][3d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3          File: /var/www/html/info.php                          [23;1H^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[1;71H(B[0;7mModified[4d(B[m[A[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;62H[?25l[22;33H[1K (B[0;7m[ Cancelled ](B[m[K[3d[?12l[?25h[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;62H[J[24;80H[24;1H[?1049l[?1l>]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo nano /var/www/html/info.php
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[22;35H(B[0;7m[ New File ][3d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3          File: /var/www/html/info.php                          [23;1H^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[1;71H(B[0;7mModified[3d(B[m<(B[0;1m[32m<?[39m(B[m[42m [49m(B[m php[4decho[42m [49m(B[m "Todayn[42m [49m(B[m is[42m [49m(B[m .da[22d[K[4;20Hte[37mdate([39m(B[m[6G(B[0;1m[33m"Todayn is .date("[39m(B[mY/m/d");[5d?(B[0;1m[32m?>[39m(B[m[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;62H(B[0;7mFile Name to Write: /var/www/html/info.php                  [23d^G(B[m Get Help     (B[0;7mM-D(B[m DOS Format  (B[0;7mM-A(B[m Append[49G(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G(B[0;7mM-M(B[m Mac Format  (B[0;7mM-P(B[m Prepend     (B[0;7m^T(B[m To Files[22;43H[?25l[22;31H[39;49m(B[m[1K (B[0;7m[ Wrote 3 lines ](B[m[K[5;3H[22d[J[1;71H(B[0;7m        [24;80H(B[m[24;1H[?12l[?25h[?1049l[?1l>]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ cat /Vv\[K[K[Kv
+var/         vmlinuz      vmlinuz.old  
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ cat /vs[Kar/www/html/
+administrator/                        Joomla_3-7.5-Stable-Full_Package.zip
+bin/                                  language/
+cache/                                layouts/
+cli/                                  libraries/
+components/                           LICENSE.txt
+.htaccess                             media/
+images/                               modules/
+includes/                             plugins/
+index.html                            README.txt
+index.nginx-debian.html               robots.txt.dist
+index.php                             templates/
+info.php                              tmp/
+installation/                         web.config.txt
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ cat /var/www/html/info.php 
+<? php
+echo "Todayn is .date("Y/m/d");
+?>
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ cat /var/www/html/info.php [C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo nginx -s stop
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo apach2[Ke2ctl restsr[Kart[K[K[K[Kart
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+httpd not running, trying to start
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo apache2ctl restart[5Pnginx -s stop[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat /var/www/html/info.php [C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo nano /var/www/html/info.php
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ][3d(B[m[22;39H(B[0;7m 3 lines[6d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3          File: /var/www/html/info.php                          [3;1H(B[0;1m[32m<?[39m(B[m php[4decho (B[0;1m[33m"Todayn is .date("[39m(B[mY/m/d");[5d(B[0;1m[32m?>[23d[39m(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[C[C[1;71H(B[0;7mModified[3;3H(B[0;1m[32mphp[39m(B[m[K[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;62H(B[0;7mFile Name to Write: /var/www/html/info.php                  [23d^G(B[m Get Help     (B[0;7mM-D(B[m DOS Format  (B[0;7mM-A(B[m Append[49G(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G(B[0;7mM-M(B[m Mac Format  (B[0;7mM-P(B[m Prepend     (B[0;7m^T(B[m To Files[22;43H[?25l[22;31H[39;49m(B[m[1K (B[0;7m[ Wrote 3 lines ](B[m[K[3;3H[22d[J[1;71H(B[0;7m        [24;80H(B[m[24;1H[?12l[?25h[?1049l[?1l>]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo nano /var/www/html/info.php[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Papache2ctl restart[5Pnginx -s stopapache2ctl restartnano /var/www/html/info.php
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ][3d(B[m[22;39H(B[0;7m 3 lines[6d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3          File: /var/www/html/info.php                          [3;1H(B[0;1m[32m<?php[4d[39m(B[mecho (B[0;1m[33m"Todayn is .date("[39m(B[mY/m/d");[5d(B[0;1m[32m?>[23d[39m(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[4decho [C[C[C[C[C[C[C[C[C[C[C[C[1;71H(B[0;7mModified[4;18H(B[0;1m[33m"(B[0m[37mdate((B[0;1m[33m"Y/m/d"[39m(B[m);[4;19H [37mdate((B[0;1m[33m"Y/m/d"[39m(B[m);[4;20H.[37mdate((B[0;1m[33m"Y/m/d"[39m(B[m);[4;21H [37mdate((B[0;1m[33m"Y/m/d"[39m(B[m);[4;22H[22d[K[4;18H[1P[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;62H(B[0;7mFile Name to Write: /var/www/html/info.php                  [23d^G(B[m Get Help     (B[0;7mM-D(B[m DOS Format  (B[0;7mM-A(B[m Append[49G(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G(B[0;7mM-M(B[m Mac Format  (B[0;7mM-P(B[m Prepend     (B[0;7m^T(B[m To Files[22;43H[?25l[22;31H[39;49m(B[m[1K (B[0;7m[ Wrote 3 lines ](B[m[K[4;17H[22d[J[1;71H(B[0;7m        [24;80H(B[m[24;1H[?12l[?25h[?1049l[?1l>]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo nano /var/www/html/info.php
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ][3d(B[m[22;39H(B[0;7m 3 lines[6d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3          File: /var/www/html/info.php                          [3;1H(B[0;1m[32m<?php[4d[39m(B[mecho (B[0;1m[33m"Todayn is "[39m(B[m . [37mdate((B[0;1m[33m"Y/m/d"[39m(B[m);[5d(B[0;1m[32m?>[23d[39m(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[4decho [C[C[C[C[C[C[C[C[1;71H(B[0;7mModified[4;13H(B[m[1P[1P(B[0;1m[33m is "[39m(B[m . [37mdate((B[0;1m[33m"Y/m/d"[39m(B[m);[4;13H[C[C(B[0;1m[33m  "[39m(B[m . [37mdate((B[0;1m[33m"Y/m/d"[39m(B[m);[4;16H(B[0;1m[33m   "[39m(B[m . [37mdate((B[0;1m[33m"Y/m/d"[39m(B[m);[4;17H[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;62H(B[0;7mFile Name to Write: /var/www/html/info.php                  [23d^G(B[m Get Help     (B[0;7mM-D(B[m DOS Format  (B[0;7mM-A(B[m Append[49G(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G(B[0;7mM-M(B[m Mac Format  (B[0;7mM-P(B[m Prepend     (B[0;7m^T(B[m To Files[22;43H[?25l[1;27H(B[0;7m     DIR: /var/www/html/    [1;71H        [3d..                                (parent dir)[4d(B[madministrator[22X[4;42H(dir)[5dbin[5;42H(dir)[6dcache[6;42H(dir)[7dcli[7;42H(dir)[8dcomponents[8;42H(dir)[9dimages[9;42H(dir)[10dincludes[10;42H(dir)[11dinstallation[11;42H(dir)[12dlanguage[12;42H(dir)[13dlayouts[13;42H(dir)[14dlibraries[14;42H(dir)[15dmedia[15;42H(dir)[16dmodules[16;42H(dir)[17dplugins[17;42H(dir)[18dtemplates[18;42H(dir)[19dtmp[19;42H(dir)[20d.htaccess[20;43H2 KB[21d.info.php.swp[21;43H1 KB[22d[K[23;14H(B[0;7m^W(B[m Where Is  (B[0;7m^B(B[m Back      (B[0;7m^P(B[m Prev Line (B[0;7m^Y(B[m Prev Page (B[0;7mM-\(B[m First File[24;2H(B[0;7mX(B[m Exit      (B[0;7m^_(B[m Go To Dir (B[0;7m^F(B[m Forward   (B[0;7m^N(B[m Next Line (B[0;7m^V(B[m Next Page (B[0;7mM-/(B[m Last File[21;47H[?12l[?25h[1;27H(B[0;7mFile: /var/www/html/info.php[1;71HModified[3d(B[0;1m[32m<?php[39m(B[m[K[4decho (B[0;1m[33m"Today is   "[39m(B[m . [37mdate((B[0;1m[33m"Y/m/d"[39m(B[m);[K[5d(B[0;1m[32m?>[39m(B[m[K[6d[K[7d[K[8d[K[9d[K[10d[K[11d[K[12d[K[13d[K[14d[K[15d[K[16d[K[17d[K[18d[K[19d[K[20d[K[21d[K[22d(B[0;7mFile Name to Write: /var/www/html/info.php                                      [23;14H(B[m   (B[0;7mM-D(B[m DOS Format  (B[0;7mM-A(B[m Append      (B[0;7mM-B(B[m Backup File[K[24;2H(B[0;7mC(B[m Cancel       (B[0;7mM-M(B[m Mac Format  (B[0;7mM-P(B[m Prepend     (B[0;7m^T(B[m To Files[K[22;43H[?25l[22;33H[1K (B[0;7m[ Cancelled ](B[m[K[4;17H[?12l[?25h[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[4;17H[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;62H(B[0;7mFile Name to Write: /var/www/html/info.php                  [23d^G(B[m Get Help     (B[0;7mM-D(B[m DOS Format  (B[0;7mM-A(B[m Append[49G(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G(B[0;7mM-M(B[m Mac Format  (B[0;7mM-P(B[m Prepend     (B[0;7m^T(B[m To Files[22;43H[?25l[22;33H[1K (B[0;7m[ Cancelled ](B[m[K[4;17H[?12l[?25h[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[4;17H[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;62H[J[24;80H[24;1H[?1049l[?1l>]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo nano /var/www/html/info.php
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ][3d(B[m[22;39H(B[0;7m 3 lines[6d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3          File: /var/www/html/info.php                          [3;1H(B[0;1m[32m<?php[4d[39m(B[mecho (B[0;1m[33m"Todayn is "[39m(B[m . [37mdate((B[0;1m[33m"Y/m/d"[39m(B[m);[5d(B[0;1m[32m?>[23d[39m(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[3d[4decho [C[C[C[C[C[C[C[C[1;71H(B[0;7mModified[4;13H(B[m[1P[1P(B[0;1m[33m is "[39m(B[m . [37mdate((B[0;1m[33m"Y/m/d"[39m(B[m);[4;13H7[4;21r8M[1;24r[4;1Hecho "Today[42m [5d[49m(B[mis (B[0;1m[33m" . date("[39m(B[mY/m/d");[K[5;21r[21;1H
+[1;24r[4;6H(B[0;1m[33m"Today is "[39m(B[m . [37mdate((B[0;1m[33m"Y/m/d"[39m(B[m);[4;13H[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;62H(B[0;7mFile Name to Write: /var/www/html/info.php                  [23d^G(B[m Get Help     (B[0;7mM-D(B[m DOS Format  (B[0;7mM-A(B[m Append[49G(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G(B[0;7mM-M(B[m Mac Format  (B[0;7mM-P(B[m Prepend     (B[0;7m^T(B[m To Files[22;43H(B[0;7mb(B[m(B[0;7mb(B[m(B[0;7mb(B[m(B[0;7m (B[m(B[0;7m (B[m(B[0;7m (B[m(B[0;7m (B[m(B[0;7mp(B[m[?25l[22;31H[39;49m(B[m[1K (B[0;7m[ Wrote 3 lines ](B[m[K[4;13H[22d[J[1;71H(B[0;7m        [24;80H(B[m[24;1H[?12l[?25h[?1049l[?1l>]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ exit
+exit
+
+Script done on Thursday 25 April 2019 12:00:24 PM IST

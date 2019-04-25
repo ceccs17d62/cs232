@@ -1,0 +1,35 @@
+Script started on Thursday 25 April 2019 10:36:15 AM IST
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo apt install perl
+[sudo] password for cec: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+perl is already the newest version (5.22.1-9ubuntu0.6).
+0 upgraded, 0 newly installed, 0 to remove and 310 not upgraded.
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ perl -v
+
+This is perl 5, version 22, subversion 1 (v5.22.1) built for x86_64-linux-gnu-thread-multi
+(with 73 registered patches, see perl -V for more detail)
+
+Copyright 1987-2015, Larry Wall
+
+Perl may be copied only under the terms of either the Artistic License or the
+GNU General Public License, which may be found in the Perl 5 source kit.
+
+Complete documentation for Perl, including FAQ lists, should be found on
+this system using "man perl" or "perldoc perl".  If you have access to the
+Internet, point your browser at http://www.perl.org/, the Perl Home Page.
+
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ gerdit hello.pl
+No command 'gerdit' found, did you mean:
+ Command 'gredit' from package 'routeplanner-gnome' (universe)
+ Command 'gedit' from package 'gedit' (main)
+gerdit: command not found
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ gerdit hello.pl[1P
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ gedit hello.pl[1@r[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[Kperl hello.pl 
+Hellooooo]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ perl hello.pl 
+Hellooooo
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ exit
+exit
+
+Script done on Thursday 25 April 2019 10:39:51 AM IST

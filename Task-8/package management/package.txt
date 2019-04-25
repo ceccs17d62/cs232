@@ -1,0 +1,5 @@
+ sudo apt update
+sudo apt upgrade
+sudo apt search <search string>
+sudo apt install <search string>
+sudo apt remove<package name>
