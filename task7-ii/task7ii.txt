@@ -1,0 +1,4 @@
+sudo apt-get install vstpd
+sudo gedit /etc/vstpd.conf
+sudo vsftpd
+ftp://lochalhost

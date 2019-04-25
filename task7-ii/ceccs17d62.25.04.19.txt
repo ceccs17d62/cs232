@@ -1,0 +1,41 @@
+Script started on Thursday 25 April 2019 09:42:42 AM IST
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo[K[K[K[Kapt-get install vstream-client[K[K[K[K[K[K[K[K[K[K[K[Kftpd
+E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ apt-get install vsftpd[1@s[1@u[1@d[1@o[1@ 
+[sudo] password for cec: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+vsftpd is already the newest version (3.0.3-3ubuntu2).
+0 upgraded, 0 newly installed, 0 to remove and 310 not upgraded.
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo gedit \[K[K/etc/vsftpd.cof[Knf
+sudo: gedit/etc/vsftpd.conf: command not found
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo gedit/etc/vsftpd.conf[1Petc/vsftpd.conf etc/vsftpd.conf
+
+(gedit:2649): Gtk-WARNING **: Calling Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+^C
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo vsftpd
+500 OOPS: could not bind listening IPv6 socket
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo systemctl sta
+start   status  
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo systemctl start vsftpd.service
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo systemctl start vsftpd.service[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvsftpd[Kgedit etc/vsftpd.conf
+
+(gedit:2981): Gtk-WARNING **: Calling Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo gedit etc/vsftpd.conf/etc/vsftpd.conf
+^C
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo gedit /etc/vsftpd.conf[1Petc/vsftpd.conf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csystemctl start vsftpd.service[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvsftpd[K
+500 OOPS: could not bind listening IPv6 socket
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo vsftpdgedit /etc/vsftpd.conf
+^C
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo gedit /etc/vsftpd.conf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvsftpd[K
+500 OOPS: could not bind listening IPv6 socket
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo vsftpdgedit /etc/vsftpd.conf
+^C
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo gedit /etc/vsftpd.conf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvsftpd[Kgedit /etc/vsftpd.conf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvsftpd[Kgedit /etc/vsftpd.conf[1Petc/vsftpd.conf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csystemctl start vsftpd.service
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo systemctl start vsftpd.service[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pgedit /etc/vsftpd.conf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvsftpd[K
+500 OOPS: could not bind listening IPv6 socket
+]0;cec@CC2-29: ~[01;32mcec@CC2-29[00m:[01;34m~[00m$ sudo vsftpdsystemctl start vsftpd.service[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pgedit /etc/vsftpd.conf
+
+** (gedit:3418): WARNING **: Set document metadata failed: Setting a
